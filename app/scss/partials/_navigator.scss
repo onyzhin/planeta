@@ -1,17 +1,146 @@
 .navigator{
-	&>ul{
-		display: none;
-		&>li{
-			&>a{
+	position: relative;
+	&-toggle{
+		position: relative;
+		z-index: inherit;
+		&:hover{
+			&>ul{
+				display: block;
+			}
+		}
+		ul{
+			li{
+				a{
+					color: $baseColor;
+					font-weight: normal;
+					text-shadow: none;	
+					text-align: left;
+					display: inline-block;		
+				}
+			}
+		}
+		&>ul{ 
+			display: none;
+			border-radius: 4px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: $container-desktop - $grid-gutter-width; 
+			padding-top: 50px;
+			padding-bottom: 13px;
+			@media (max-width: $container-desktop){
+				width: $container-md - $grid-gutter-width; 
+			}
+			&:after{
+				content: '';
+				box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+				background: #fff;
+				border-radius: 4px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 1;
+				@extend .col-sm-3;
+			}
+			&>li{
+				@extend %clear;
+				&:hover{
+					ul{
+						display: block;
+					}					
+			    	span{
+			    		border-color: transparent;
+			    	}
+			    	&>a{
+			    		color: $labelColor;
+			    		&:before{
+				    		content: '';
+				    		top: 0;
+				    		right: -10px;
+				    		width: 20px;
+				    		height: 100%;
+				    		background: #fff;
+				    		position: absolute;
+				    		z-index: 2;
+				    	}
+			    	}
+				}
+				&>a{
+					position: relative;
+					z-index: 2;
+					line-height: 19px;
+					border-bottom: 1px dotted #e3e3e3;
+					padding: 5px 20px;
+					@extend .col-sm-3;
+				    span{
+				    	display: inline;
+				    	line-height: 14px;
+				    	border-bottom: 1px dotted #333333;
+				    }
+					&:after{
+						content:'';
+						@extend .sprite;
+						@extend .icon-arrow-small;
+						position: absolute;
+					    top: calc(50% - 2px);
+						right: 10px;
+					}
+				}
+				&:last-child a{
+					border-color: transparent;
+				}
 				&>ul{
+					display: none;
+					position: absolute;
+					z-index: 1;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					top: 43px; 
+					background: #fff;
+					border-radius: 4px;
+					padding-left: calc(25% + 30px);
+					padding-top: 14px;
+					padding-bottom: 18px;
+					padding-right: 25px;
+					text-align: left;
+					column-count: 3;	
+					&:after{
+						content: '';
+						@extend %full;
+						box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+						border-radius: 4px;
+					}
 					&>li{
+						display: block;
+						margin-bottom: 11px; 
+						padding-right: 5px;
+						&.hasSub{
+							margin: 31px 0 9px; 
+						}
 						&>a{
-							ul{
-								li{
-									a{
-										
-									}
+							font-weight: bold;    
+							line-height: 19px;
+							display: block;
+						}
+						a{
+							display: block;   
+							line-height: 19px;
+							position: relative;
+							z-index: 2;
+							span{
+								text-decoration: underline;
+							}
+							&:hover{
+								span{
+									text-decoration: none;
 								}
+							}
+						}
+						ul{
+							li{
+								margin-bottom: 1px;
 							}
 						}
 					}

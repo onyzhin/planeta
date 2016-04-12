@@ -157,7 +157,7 @@ function sendForm(){
 	                $.fancybox.open(paramsFancy);
 	                $('form input[type="text"]').val('');
                   	$('form input[type="text"]').blur();
-                  	$('.zNice-tInput').removeClass('zNice-error zNice-valid');
+                  	$('.nice-tInput').removeClass('nice-error nice-valid');
 	            }
 	        });
 	        
@@ -165,6 +165,14 @@ function sendForm(){
 
 	    } 
 	}); 
+}
+
+function navigatorList(){
+	$('.navigator-toggle > ul > li > ul > li').each(function(){
+		if($(this).find('ul').length > 0){
+			$(this).addClass('hasSub');
+		}
+	})
 }
 
 $(document).ready(function(){
@@ -175,6 +183,8 @@ $(document).ready(function(){
 	tabs();
 	$('form').validate();
 	$('select').select2();
+	navigatorList();
+	star('.rating');
 });
 
 $(window).resize(function(){
