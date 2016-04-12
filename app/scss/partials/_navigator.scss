@@ -1,0 +1,22 @@
+.navigator{
+	&>ul{
+		display: none;
+		&>li{
+			&>a{
+				&>ul{
+					&>li{
+						&>a{
+							ul{
+								li{
+									a{
+										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

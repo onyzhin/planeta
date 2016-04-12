@@ -1,16 +1,26 @@
-$fontFamily:  arial, sans-serif;
-$baseColor : #000; 
-$baseColorHover : #000; 
-$ctextColor : #242424; 
-$titleSize : 1.2em;
-$bodyBackground : #fff;
-$bodyFontSize : 14px;
-$container : 960px;
-$containerVal : 930;
+/* base */
+$fontFamily: 'PT Sans', sans-serif;
+$titleSize: 1.2em;
+$bodyFontSize: 14px;
+$container: 960px;
+$containerVal: 930;
 $minContainer : 320px;
 
-/*buttons*/
+/* buttons */
 $buttonHeight: 40px;
-$buttonColor : rgb(138, 0, 78);
-$buttonColorHover : #a4025e;
-$buttonText : #fff;
+$buttonColor: rgb(138, 0, 78);
+$buttonColorHover: #a4025e;
+$buttonText: #fff;
+
+/* Colors */
+$baseColor: #333333; 
+$baseColorHover: #333333; 
+$ctextColor: #333333; 
+$footerLink: #969696;
+
+$bodyBackground: #fff;
+$headfooterColor: #333333;
+$labelColor: #e1004a; 
+$labelDisableColor: #606060;
+$buttonLightColor: #ff0054;
+$buttonDarkColor: #e1004a;

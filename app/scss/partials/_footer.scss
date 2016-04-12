@@ -1,0 +1,21 @@
+.footer{
+	&-main{
+		background: $headfooterColor;
+		padding: 25px 0;
+	}
+	ul{
+		li{
+			margin-bottom: 12px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			a{
+				color: $footerLink;
+				text-decoration: underline; 
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

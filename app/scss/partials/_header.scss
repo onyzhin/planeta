@@ -1,9 +1,142 @@
 .header{
+	&-phone{
+		color: #fff;
+		padding: 10px 0 5px;
+		a{
+			color: #fff;
+			@extend %inline-middle;
+			border-bottom: 1px dotted #fff;
+			line-height: 13px;
+			&:hover{
+				border-color: transparent;
+			}
+		}
+		p{
+			font-size: 16px;
+			margin-bottom: 1px;
+			line-height: 22px;
+			b{
+				font-size: 24px;
+				font-weight: bold; 
+			}
+		}
+	}
+	&-top{
+		background: $headfooterColor;
+	}
+	&-detail{
+		float: right;
+		border-left: 1px solid #404040;
+		padding: 0 10px;
+		line-height: 61px;
+		&-inner, a{
+			color: #fff;
+			text-decoration: none;			
+		}
+		&:first-child{
+			border-right: 1px solid #404040;
+		}
+		&.disable{
+			.header-detail-inner, a{				
+				color: #969696; 
+			}
+			.header-detail-count{
+				background: $labelDisableColor;
+			}
+		}
+		span{
+			@extend %inline-middle;
+		}
+		i{
+			margin-right: 9px;
+		}
+		&-count{	
+			background: $labelColor;	
+			width: 34px;
+			height: 21px;
+			line-height: 21px;
+			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+			border-radius: 3px;
+			text-align: center;
+			margin: 0 3px;
+		}
+		&.compare{
+			&.disable{
+				i{
+					@extend .icon-compare;
+				}
+			}
+		}
+		&.postpone{
+			&.disable{
+				i{
+					@extend .icon-heart-disable-big;
+				}
+			}			
+		}
+		&.basket{
+			&.disable{
+				i{
+					@extend .icon-basket-disable;
+				}
+			}
+		}
+	}
+	&-main{
+		padding-top: 24px; 
+	}
+	&-logo{
+		display: block;
+		margin-bottom: 15px; 
+	}
+	&-setting{
+		@extend %clear;
+		border-bottom: 1px solid #e3e3e3;
+		padding: 9px 0 16px 0; 
+	}
+	&-authorization{
+		a{
+			color: $baseColor;
+			@extend %inline-middle;
+			border-bottom: 1px dotted $baseColor;
+			line-height: 14px;
+			margin: 0 2px;
+			&:hover{
+				border-color: transparent;
+			}
+		}
+	}
+	&-search{
+		@extend %clear;
+		margin-bottom: 30px;
+		&-field{
+			input[type="text"]{
+				float: left;
+				width: calc(100% - 135px);
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				padding: 0 10px 0 44px;
+			}
+			.button{
+				float: right;
+				width: 135px;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+			i{
+				position: absolute;
+				top: 14px;
+				left: 19px;
+			}
+		}
+	}
 	&-menu{   
 		position: relative;
 		z-index: 2;
-		background: #D0D0D0;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+		.navbar{
+			margin-bottom: 0;
+		}
 		ul{
 			display: table;
 			width: 100%;
@@ -11,9 +144,12 @@
 				display: table-cell;
 				vertical-align: middle;
 				text-align: center;
-				height: 30px;
 				a{
 					text-decoration: none;
+					color: $baseColor;
+					font-size: 14px;
+					line-height: 26px; 
+					padding: 10px 26px;
 				}
 				&.active,
 				& a:hover{ 

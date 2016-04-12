@@ -168,13 +168,13 @@ function sendForm(){
 }
 
 $(document).ready(function(){
-	console.log('It is common.js'); 
 	navbartoggle();
 	slickInit();
 	fancybox();
 	footerplaceholder();
 	tabs();
-	$("form").validate();
+	$('form').validate();
+	$('select').select2();
 });
 
 $(window).resize(function(){

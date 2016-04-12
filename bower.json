@@ -13,7 +13,8 @@
     "jquery": "2.*",
     "slick-carousel": "~1.5.9",
     "fancyBox": "~2.1.5", 
-    "jquery-validation": "~1.14.0"
+    "jquery-validation": "~1.14.0",
+    "select2": "*"
   },
   "main": "",
   "private": true,

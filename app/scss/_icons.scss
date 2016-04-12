@@ -9,18 +9,139 @@
 	
 }
 
- @mixin socIcon($bg){
- 	background-position: $bg;
- }
+ @mixin stitches-icon($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+}
 
- .social-icon {
- 	background-image: url('../images/social-icon.png');
- 	background-repeat: no-repeat;
-	
- 	&_fb {
- 		@include socIcon(0 0);
- 	}
- 	&_vk {
-		@include socIcon(-15px 0);
-	}
- }
+.sprite {
+    background-image: url(../img/main-sprite.png); 
+    background-repeat: no-repeat; 
+    @extend %inline-middle;
+
+    &.icon-arrow-c-left {
+        @include stitches-icon(-1px, -1px, 30px, 29px);
+    }
+
+    &.icon-arrow-c-right {
+        @include stitches-icon(-33px, -1px, 30px, 29px);
+    }
+
+    &.icon-arrow-down {
+        @include stitches-icon(-65px, -1px, 13px, 8px);
+    }
+
+    &.icon-arrow-down-grey {
+        @include stitches-icon(-80px, -1px, 13px, 8px);
+    }
+
+    &.icon-basket-active {
+        @include stitches-icon(-65px, -11px, 22px, 20px);
+    }
+
+    &.icon-basket-disable {
+        @include stitches-icon(-89px, -76px, 22px, 20px);
+    }
+
+    &.icon-burger {
+        @include stitches-icon(-1px, -33px, 15px, 12px);
+    }
+
+    &.icon-check {
+        @include stitches-icon(-18px, -33px, 21px, 22px);
+    }
+
+    &.icon-check-active {
+        @include stitches-icon(-41px, -33px, 21px, 22px);
+    }
+
+    &.icon-compare {
+        @include stitches-icon(-64px, -33px, 19px, 19px);
+    }
+
+    &.icon-compare-active {
+        @include stitches-icon(-64px, -54px, 19px, 19px);
+    }
+
+    &.icon-heart-active-big {
+        @include stitches-icon(-1px, -75px, 22px, 19px);
+    }
+
+    &.icon-heart-disable-big {
+        @include stitches-icon(-46px, -75px, 22px, 19px);
+    }
+
+    &.icon-heart-active-middle {
+        @include stitches-icon(-25px, -75px, 19px, 16px);
+    }
+
+    &.icon-heart-active-small {
+        @include stitches-icon(-85px, -33px, 13px, 11px);
+    }
+
+    &.icon-heart-disable-small {
+        @include stitches-icon(-85px, -46px, 13px, 11px);
+    }
+
+    &.icon-key {
+        @include stitches-icon(-1px, -54px, 15px, 15px);
+    }
+
+    &.icon-map {
+        @include stitches-icon(-85px, -59px, 13px, 15px);
+    }
+
+    &.icon-remove-active {
+        @include stitches-icon(-18px, -59px, 11px, 12px);
+    }
+
+    &.icon-remove-disable {
+        @include stitches-icon(-31px, -59px, 11px, 12px);
+    }
+
+    &.icon-search {
+        @include stitches-icon(-70px, -76px, 15px, 15px);
+    }
+
+    &.icon-uislider-pick {
+        @include stitches-icon(-95px, -1px, 20px, 20px);
+    }
+
+    &.icon-view-1 {
+        @include stitches-icon(-100px, -23px, 15px, 15px);
+    }
+
+    &.icon-view-1-active {
+        @include stitches-icon(-100px, -40px, 15px, 15px);
+    }
+
+    &.icon-view-2 {
+        @include stitches-icon(-44px, -57px, 15px, 15px);
+    }
+
+    &.icon-view-2-active {
+        @include stitches-icon(-100px, -57px, 15px, 15px);
+    }
+}
+
+.icon {
+    background-image: url(../img/arows.png);    background-repeat: no-repeat;
+    @extend %inline-middle;
+
+    &.arrows-dis-left {
+        @include stitches-icon(0, 0, 49px, 49px);
+    }
+
+    &.arrows-dis-right {
+        @include stitches-icon(-49px, 0, 49px, 49px);
+    }
+
+    &.arrows-act-right {
+        @include stitches-icon(0, -49px, 49px, 49px);
+    }
+
+    &.arrows-act-left {
+        @include stitches-icon(-49px, -49px, 49px, 49px);
+    }
+}
