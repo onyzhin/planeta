@@ -337,4 +337,52 @@
 				.product_specification table tr:last-child td{
 					border-bottom: none;
 				}
+.show-tablet{
+	display: none;
+}
 
+@media screen and (max-width: 980px) {
+	.big_product_img, .big_product_img figure{
+		width: 100%;
+		text-align: center;
+		height: auto;
+	}
+	img{
+		max-width: 100%;
+	}
+	 .big_product_img figure{
+	 	padding: 20px;
+	 }
+	 .product_img{
+		width: 54px;
+		height: auto;
+		text-align: center;
+	}
+		.product_img a{
+			display: block;
+			width: 54px;
+			height: auto;
+			padding: 5px;
+		}
+			.product_img a img{
+				width: auto;
+			}
+	.to_compare_block a{
+		display: inline-block;
+	}
+	.to_compare_block{
+		padding-top: 20px;
+	}
+	.hide-tablet{
+		display: none;
+	}
+	.show-tablet{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.big_product_img figure {
+		display: block;
+	}
+}
