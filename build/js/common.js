@@ -266,6 +266,9 @@ noUiSlider.create(html5Slider, {
 		'52%': 50645,
 		'max': 109990,
 	},
+	format: wNumb({
+		decimals: 0
+	})
 
 });
 
