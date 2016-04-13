@@ -1,10 +1,56 @@
-<div class="product">
+<div class="product-collections">
 	<div class="container">
-		<div class="row">
-			@@include('_product_item2.html')
-			@@include('_product_item.html')
-			@@include('_product_item.html')
-			@@include('_product_item.html')
+		<div class="product-collections-header">
+			<h3>Популярное</h3>
+			<h3><a href="#">Новинки</a></h3>
+			<h3><a href="#">Акции</a></h3>
+			<h3><a href="#">Распродажа</a></h3>
 		</div>
+		<div class="product-slider">
+			<div class="carousel-arrows"></div>
+			<div class="carousel">
+				@@include('_product_item.html', {
+				    "name": "Смартфон QUMO QUEST 503 black",
+				    "img": "product-2.png", 
+				    "disable": "disable",
+				    "icon": "icon-heart-disable-small",
+				    "price": "4 890 руб.",
+				    "hidden": ""
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden"
+				})
+			</div>
+		</div>
+		<a href="#" class="btn btn-default btn-sm pull-right">Смотреть все</a>
 	</div>
 </div>

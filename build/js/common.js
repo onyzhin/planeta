@@ -23,11 +23,36 @@ function star(rating){
 
 function slickInit(){
 	if ($('.slider').length){
-		$('.slider').slick({
+		$('.slider').slick({ 
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  arrows: true,
 		  fade: true
+		});
+	}
+	if ($('.companies-slider').length){
+		$('.companies-slider').slick({
+		  slidesToShow: 5,
+		  slidesToScroll: 5,
+		  arrows: true,
+		  fade: false
+		});
+	}
+	if ($('.carousel').length){
+		$('.carousel').slick({ 
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			//appendArrows:$('.carousel-arrows'),
+			fade: false,
+			responsive: [
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+				}
+			}]
 		});
 	}
 	if ($('.slider-for').length){
@@ -175,6 +200,27 @@ function navigatorList(){
 	})
 }
 
+function spinner() {
+	var $firstBtn = $('.spinner .btn:first-of-type');
+	if ($firstBtn.val() <= 0)  
+	 	$firstBtn.addClass('extremum');  
+
+	 $('.spinner .btn:first-of-type').on('click', function() {
+	 	var $spinner = $(this).closest('.spinner');
+	 	var $input = $spinner.find('input');	   
+	 	$(this).removeClass('extremum');   
+	    if ($input.val()>0) $input.val( parseInt($input.val(), 10) - 1);
+	    if ($input.val()<=0) $(this).addClass('extremum');  
+	  });
+	  $('.spinner .btn:last-of-type').on('click', function() {
+	 	var $spinner = $(this).closest('.spinner');
+	 	var $input = $spinner.find('input');
+		var $localBtn = $spinner.find('.btn:first-of-type');
+	 	$localBtn.removeClass('extremum');  
+	    $input.val( parseInt($input.val(), 10) + 1);
+	  }); 
+}
+
 $(document).ready(function(){
 	navbartoggle();
 	slickInit();
@@ -185,6 +231,7 @@ $(document).ready(function(){
 	$('select').select2();
 	navigatorList();
 	star('.rating');
+	spinner();
 });
 
 $(window).resize(function(){

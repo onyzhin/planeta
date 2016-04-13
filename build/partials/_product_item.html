@@ -1,12 +1,23 @@
-<div class="col-sm-3 product-item"> 
-	<a href="#" class="product-item-postpone"><i class="sprite icon-heart-active-small "></i></a>
-	<div class="product-item-image"><a href="#"><img src="img/product-1.png" alt=""></a><span class="vfix"></span></div>
-	<h5><a href="#">LED телевизор Supra STV-LC32T400WL</a></h5>
+<div class="product-item"> 
+	<a href="#" class="product-item-postpone @@disable"><i class="sprite @@icon"></i></a>
+	<div class="product-item-image">
+		<a href="#"><img src="img/@@img" alt=""></a><span class="vfix"></span>
+		<div class="product-item-labels @@hidden">
+			<span class="label label-success">Акция</span>
+			<span class="label label-warning">Хит продаж</span>
+			<span class="label label-primary">Новинка</span>
+		</div>
+	</div>
+	<h5><a href="#">@@name</a></h5> 
 	<div class="product-item-rate"><div class="rating" data-rating="3"></div> <a href="#">(3)</a></div>
-	<div class="product-item-price">13 790 руб.</div>
+	<div class="product-item-price">@@price</div>
 	<div class="product-item-hidden">
-		<div class="product-item-basket zNice">  
-			<input type="text" data-ztype="qInput">
+		<div class="product-item-basket">  
+			<div class="spinner">
+		        <button class="btn btn-default" type="button"><i class="sprite icon-arrow-down"></i></button> 
+			    <input type="text" class="form-control" value="0">
+	      		<button class="btn btn-default" type="button"><i class="sprite icon-arrow-up"></i></button>
+			</div> 
 			<a href="#" class="button">В корзину</a>
 		</div>
 		<div class="product-item-compare">

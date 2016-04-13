@@ -1,0 +1,42 @@
+.companies{	
+	border-top: 1px solid #e3e3e3;
+	padding-top: 30px;
+	margin-bottom: 30px;
+	&-slider{
+		padding-right: pxtopercent(70);
+		padding-left: pxtopercent(70);		
+	}
+	.slick-slide{
+		outline: none;
+	}
+	&-item{
+		height: 75px;
+		border: 1px solid #e3e3e3;
+		border-radius: 4px;
+		text-align: center;
+		margin: 0 15px;
+	}
+	img{
+		@extend %inline-middle;
+	}
+	.slick-prev{
+		@extend .icon;  
+		@extend .arrows-dis-left; 
+		&:hover{
+			@extend .arrows-act-left; 
+		} 
+		&:before{
+			content: none;
+		} 
+	}
+	.slick-next{
+		@extend .icon; 
+		@extend .arrows-dis-right;  
+		&:hover{
+			@extend .arrows-act-right;  
+		} 
+		&:before{
+			content: none;
+		} 
+	} 
+}

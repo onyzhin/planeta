@@ -1,0 +1,50 @@
+.spinner {
+  width: 100px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  height: 31px; 
+  input {
+    text-align: center;
+    border: 0;
+    width: 33.3%;
+    float: left;
+    padding: 0;
+    height: 31px;
+    line-height: 29px;
+  }
+  .btn {
+    float: left;
+    width: 33.3%;
+    position: relative;
+    top: 0px;
+    min-width: auto;
+    height: 31px;
+    line-height: 29px;
+    @include vertical-gradient-simple(#fff, #f4f4f4);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border: 0;
+    outline: none;
+    &:active{
+      outline: none;
+    }
+    &:not(.extremum):active{
+      background: #f4f4f4;
+    }
+  }
+  .btn:first-child {
+  }
+  .btn:last-child {
+  }
+  .btn i{
+    @extend %full;
+  }
+  .btn.extremum{    
+    cursor: default;
+    .icon-arrow-up{
+      @extend .icon-arrow-up-grey; 
+    }  
+    .icon-arrow-down{
+      @extend .icon-arrow-down-grey;
+    }
+  }
+}

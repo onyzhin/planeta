@@ -36,6 +36,16 @@
         @include stitches-icon(-80px, -1px, 13px, 8px);
     }
 
+    &.icon-arrow-up {
+        @include stitches-icon(-65px, -1px, 13px, 8px);
+        transform: rotate(180deg);
+    }
+
+    &.icon-arrow-up-grey {
+        @include stitches-icon(-80px, -1px, 13px, 8px);
+        transform: rotate(180deg);
+    }
+
     &.icon-arrow-small {
         @include stitches-icon(-111px, -80px, 5px, 8px);
     }
@@ -130,7 +140,7 @@
 }
 
 .icon {
-    background-image: url(../img/arows.png);    background-repeat: no-repeat;
+    background-image: url(../img/arrows.png);    background-repeat: no-repeat;
     @extend %inline-middle;
 
     &.arrows-dis-left {
@@ -159,5 +169,25 @@
     background-position: right top;
     &-active{
         background-position: left top;
+    }
+}
+
+.icon-socials{
+    background-image: url(../img/socials-sprite.png);    background-repeat: no-repeat;
+    @extend %inline-middle;
+    &.vk{
+        @include stitches-icon(0px, 0, 39px, 39px);
+    }
+    &.fb{
+        @include stitches-icon(-39px, 0, 39px, 39px);
+    }
+    &.od{
+        @include stitches-icon(-78px, 0, 39px, 39px);
+    }
+    &.tw{
+        @include stitches-icon(-117px, 0, 39px, 39px);
+    }
+    &.gp{
+        @include stitches-icon(-156px, 0, 39px, 39px);
     }
 }
