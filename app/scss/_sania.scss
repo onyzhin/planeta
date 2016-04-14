@@ -621,14 +621,113 @@
 	z-index: 20;
 }
 
+.clean_basket{
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	span{
+		margin: 0 5px 0 0;
+	}
+	small{
+		font-size: 14px;
+		color: #333333;
+		border-bottom: 1px dotted #333333;
+		position: relative;
+		bottom: 2px;
+	}
+	&:hover{
+		small{
+			border-color: #fff;
+		}
+	}
+	
+	
+}
 
+.basket_table{
+	table{
+		width: 100%;
+	}
+	thead{
+		border-radius: 6px;
+		border: 1px solid #e3e3e3;
+		background-color: #fbfbfb;
+		th{
+			padding: 5px 8px;
+		}
+	}
+	tbody{
+		td{
+			font-size: 16px;
+			color: #333333;
+			padding: 18px 8px;
+			vertical-align: middle;
+			border-bottom: 1px dotted #e3e3e3;
 
-
-
-
-
-
-
+			a{
+				font-size: 16px;
+				color: #333333;
+			}
+		}
+		tr:last-child{
+			td{
+				border: none;
+				padding-bottom: 40px;
+			}
+		}
+	}
+	.basket_table_img{
+		display: block;
+		text-align: center;
+		border: 1px solid #e3e3e3;
+	}
+	.compare_link{
+		display: block;
+	    font-size: 14px;
+	    color: #333333;
+	    margin: 8px 0 0 0;
+	    padding-bottom: 5px;
+	    em{
+	    	font-style: normal;
+		    border-bottom: 1px dotted #333;
+		    margin: 0 0 0 7px;
+		}
+	}
+	a{
+		text-decoration: none;
+	}
+}
+.all_price{
+	width: 235px;
+	float: right;
+	small{
+		color: #333333;
+		font-size: 14px;
+		padding: 0 12px 0 0;
+	}
+	strong{
+		font-size: 24px;
+	}
+	b{
+		font-size: 16px;
+	}
+}
+.continue{
+	.button{
+		color: #e1004a !important;
+		text-shadow: none;
+		@include vertical-gradient-simple(#ffffff, #f4f4f4);
+	}
+	small{
+		display: block;
+		font-size: 14px;
+		color: #767676;
+		padding: 12px 0 0 0 ;
+	}
+}
+.order_products{
+	width: 245px;
+	float: right;
+}
 
 
 

@@ -6797,6 +6797,92 @@ a {
   height: 20px;
   z-index: 20; }
 
+.clean_basket {
+  padding: 0 0 0 20px;
+  text-decoration: none; }
+  .clean_basket span {
+    margin: 0 5px 0 0; }
+  .clean_basket small {
+    font-size: 14px;
+    color: #333333;
+    border-bottom: 1px dotted #333333;
+    position: relative;
+    bottom: 2px; }
+  .clean_basket:hover small {
+    border-color: #fff; }
+
+.basket_table table {
+  width: 100%; }
+
+.basket_table thead {
+  border-radius: 6px;
+  border: 1px solid #e3e3e3;
+  background-color: #fbfbfb; }
+  .basket_table thead th {
+    padding: 5px 8px; }
+
+.basket_table tbody td {
+  font-size: 16px;
+  color: #333333;
+  padding: 18px 8px;
+  vertical-align: middle;
+  border-bottom: 1px dotted #e3e3e3; }
+  .basket_table tbody td a {
+    font-size: 16px;
+    color: #333333; }
+
+.basket_table tbody tr:last-child td {
+  border: none;
+  padding-bottom: 40px; }
+
+.basket_table .basket_table_img {
+  display: block;
+  text-align: center;
+  border: 1px solid #e3e3e3; }
+
+.basket_table .compare_link {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin: 8px 0 0 0;
+  padding-bottom: 5px; }
+  .basket_table .compare_link em {
+    font-style: normal;
+    border-bottom: 1px dotted #333;
+    margin: 0 0 0 7px; }
+
+.basket_table a {
+  text-decoration: none; }
+
+.all_price {
+  width: 235px;
+  float: right; }
+  .all_price small {
+    color: #333333;
+    font-size: 14px;
+    padding: 0 12px 0 0; }
+  .all_price strong {
+    font-size: 24px; }
+  .all_price b {
+    font-size: 16px; }
+
+.continue .button, .continue .form input[type="submit"], .form .continue input[type="submit"] {
+  color: #e1004a !important;
+  text-shadow: none;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#ffffff', end-colourStr='#f4f4f4'); }
+
+.continue small {
+  display: block;
+  font-size: 14px;
+  color: #767676;
+  padding: 12px 0 0 0; }
+
+.order_products {
+  width: 245px;
+  float: right; }
+
 @media (min-width: 768px) {
   .modal-dialog {
     width: 400px;
