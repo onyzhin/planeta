@@ -208,20 +208,42 @@ function spinner() {
 	if ($firstBtn.val() <= 0)  
 	 	$firstBtn.addClass('extremum');  
 
-	 $('.spinner .btn:first-of-type').on('click', function() {
+	 $(document).on('click', '.spinner .btn:first-of-type', function() {
 	 	var $spinner = $(this).closest('.spinner');
 	 	var $input = $spinner.find('input');	   
 	 	$(this).removeClass('extremum');   
 	    if ($input.val()>0) $input.val( parseInt($input.val(), 10) - 1);
 	    if ($input.val()<=0) $(this).addClass('extremum');  
-	  });
-	  $('.spinner .btn:last-of-type').on('click', function() {
+	  }); 
+	  $(document).on('click', '.spinner .btn:last-of-type', function() {
 	 	var $spinner = $(this).closest('.spinner');
 	 	var $input = $spinner.find('input');
 		var $localBtn = $spinner.find('.btn:first-of-type');
 	 	$localBtn.removeClass('extremum');  
 	    $input.val( parseInt($input.val(), 10) + 1);
 	  }); 
+}
+
+function productHidden(){
+	$('.product-item').hover(function(){
+		var $hidden = $('<div class="product-item-hidden"></div>').append($(this).find('.product-item-hidden').clone()).html();
+		console.log($hidden); 
+		var pwidth = $(this).outerWidth();
+		var ptop = $(this).offset().top + $(this).height();
+		var pleft = $(this).offset().left;
+		$('body').append($hidden);
+		$('body>.product-item-hidden').css({ 
+			'display' : 'block',
+			'position' : 'absolute',
+			'left' : pleft,
+			'right' : 'auto',
+			'top' : ptop, 
+			'width' : pwidth
+		})
+	},
+	function(){
+		$('body>.product-item-hidden').remove(); 
+	})
 }
 
 $(document).ready(function(){
@@ -235,6 +257,7 @@ $(document).ready(function(){
 	navigatorList();
 	star('.rating');
 	spinner();
+	productHidden();
 });
 
 $(window).resize(function(){
@@ -313,6 +336,8 @@ $( ".filter_trigger" ).click(function() {
   $( this ).next().slideToggle('slow');
 });
 
+if ($('#html5').length){
+
 var html5Slider = document.getElementById('html5');
 
 noUiSlider.create(html5Slider, {
@@ -349,3 +374,5 @@ inputNumberFirst.addEventListener('change', function(){
 inputNumber.addEventListener('change', function(){
 	html5Slider.noUiSlider.set([null, this.value]);
 });
+
+}

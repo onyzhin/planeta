@@ -1,7 +1,6 @@
 .product{
 	&-slider{
 		margin-bottom: 18px;
-		height: 302px;
 		position: relative;
 		z-index: 2;
 		.slick-list{
@@ -9,6 +8,14 @@
 		}
 		.slick-slider{
 			margin-bottom: 0;
+		}
+		.carousel{
+			overflow: hidden;
+			position: relative;
+			z-index: 5;
+			@media (min-width: $container-lg){
+				margin-right: -2px; 
+			}
 		}
 	}
 	&-collections{
@@ -18,15 +25,6 @@
 		.btn-default{
 			position: relative;
 			z-index: 3;
-		}
-		.carousel{
-			overflow-x: hidden; 
-			height: 472px;
-			position: relative;
-			z-index: 5;
-			@media (min-width: $container-lg){
-				margin-right: -2px; 
-			}
 		}
 		&-header{
 			@extend %clear;
@@ -117,7 +115,7 @@
 			}
 			a{
 				@extend %inline-middle;
-				color: #767676; 				
+				color: $ctextLigthColor; 				
 			}
 		}
 		&-price{
@@ -154,6 +152,7 @@
 		&-compare{
 			text-align: center;
   			margin-bottom: 16px; 
+			white-space: nowrap; 
 			i{
 				margin-right: 10px;
 			}
@@ -163,6 +162,7 @@
 				line-height: 13px;
 			}
 			a{
+  				color: $ctextColor;
 				&:hover{
 					span{
 						border-color: transparent;
@@ -177,7 +177,7 @@
 		}
 		&:hover{
 			.product-item-hidden{
-				display: block;
+				//display: block;
 			}
 		}
 	}

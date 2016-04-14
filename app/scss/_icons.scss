@@ -159,21 +159,22 @@
         @include stitches-icon(-49px, -49px, 49px, 49px);
     }
 }
-
-.star{
-    background: url(../img/star-sprite.png);
-    background-repeat: no-repeat; 
-    @extend %inline-middle;
-    width: 15px;
-    height: 15px;
-    background-position: right top;
-    &-active{
-        background-position: left top;
+.rating{
+    span{
+        background: url(../img/star-sprite.png) no-repeat right top;
+        @extend %inline-middle;
+        width: 15px;
+        height: 15px;
+        margin:  0 2px;
+        &.active{
+            background-position: left top;
+        }
     }
 }
 
 .icon-socials{
-    background-image: url(../img/socials-sprite.png);    background-repeat: no-repeat;
+    background-image: url(../img/socials-sprite.png);    
+    background-repeat: no-repeat;
     @extend %inline-middle;
     &.vk{
         @include stitches-icon(0px, 0, 39px, 39px);

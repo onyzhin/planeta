@@ -36,17 +36,6 @@ body *{
 	margin-bottom: 30px;
 }
 
-.rating{
-	span{
-		@extend .star;
-		margin: 0 3px; 
-		&.active{
-			@extend .star-active;
-		}
-	}
-}
-
-
 .slick-slider{
     margin-bottom: 0;
 }
