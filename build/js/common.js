@@ -329,7 +329,11 @@ function color_square(){
 	});
 }
 
-<<<<<<< HEAD
+
+$( ".basket" ).click(function() {
+  $( '.drop_basket_wrap' ).slideToggle('slow');
+});
+
 function uislider(){
 	if ($('#html5').length){
 
@@ -346,26 +350,6 @@ function uislider(){
 			format: wNumb({
 				decimals: 0
 			})
-=======
-$( ".basket" ).click(function() {
-  $( '.drop_basket_wrap' ).slideToggle('slow');
-});
-
-
-var html5Slider = document.getElementById('html5');
-
-noUiSlider.create(html5Slider, {
-	start: [ 20000, 90000 ],
-	connect: true,
-	range: {
-		'min': 8700,
-		'52%': 50645,
-		'max': 109990,
-	},
-	format: wNumb({
-		decimals: 0
-	})
->>>>>>> origin/sania2
 
 		});
 

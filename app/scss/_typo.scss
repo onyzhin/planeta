@@ -11,6 +11,9 @@ a{
 	border:0;
 
 	&:hover{color:$baseColorHover;text-decoration: none;}
+	&:active, &:focus{
+		text-decoration: none;
+	}
 }
 
 .mainheading,.ctext h1,h1{

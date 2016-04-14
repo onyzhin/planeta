@@ -22,6 +22,7 @@
 	.slick-prev{
 		@extend .icon;  
 		@extend .arrows-dis-left; 
+		left: 0px;
 		&:hover{
 			@extend .arrows-act-left; 
 		} 
@@ -32,6 +33,7 @@
 	.slick-next{
 		@extend .icon; 
 		@extend .arrows-dis-right;  
+		right: 0px;
 		&:hover{
 			@extend .arrows-act-right;  
 		} 

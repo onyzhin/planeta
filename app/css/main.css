@@ -36,11 +36,7 @@ a {
   display: inline-block;
   vertical-align: middle; }
 
-<<<<<<< HEAD
 .navigator > ul > li > ul:after, .spinner .btn i, .catalog-view i {
-=======
-.navigator-toggle > ul > li > ul:after, .spinner .btn i {
->>>>>>> origin/sania2
   position: absolute;
   top: 0;
   left: 0;
@@ -5858,6 +5854,8 @@ a {
   a:hover {
     color: #333333;
     text-decoration: none; }
+  a:active, a:focus {
+    text-decoration: none; }
 
 .mainheading, .ctext h1, h1 {
   font-size: 30px;
@@ -6750,12 +6748,15 @@ a {
     border-radius: 4px;
     text-align: center;
     margin: 0 15px; }
-  .companies .slick-prev:before {
-    content: none; }
-  .companies .slick-next:before {
-    content: none; }
+  .companies .slick-prev {
+    left: 0px; }
+    .companies .slick-prev:before {
+      content: none; }
+  .companies .slick-next {
+    right: 0px; }
+    .companies .slick-next:before {
+      content: none; }
 
-<<<<<<< HEAD
 .catalog-header {
   border-radius: 8px;
   border: 1px solid #e3e3e3;
@@ -6851,8 +6852,6 @@ nav.pagination-nav {
       .pagination-custom li:last-child > span:hover {
         text-decoration: none; }
 
-=======
->>>>>>> origin/sania2
 /*===========================================================
  Styles for developers
 ===========================================================*/
@@ -6896,7 +6895,7 @@ nav.pagination-nav {
   color: #767676;
   font-size: 14px; }
 
-.star, .rating span {
+.star {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -6904,7 +6903,7 @@ nav.pagination-nav {
   margin: 0 1px;
   background: url(../img/star-sprite.png) no-repeat top left; }
 
-.star.grey, .rating span.grey {
+.star.grey {
   background-position: top right; }
 
 .product_info {
@@ -7654,8 +7653,6 @@ nav.pagination-nav {
   .big_product_img figure {
     display: block; } }
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 560px) {
   .basket_table thead {
     display: none; }
@@ -7706,7 +7703,6 @@ nav.pagination-nav {
   .basket_table tbody td .button, .basket_table tbody td .form input[type="submit"], .form .basket_table tbody td input[type="submit"] {
     padding: 0 2px; } }
 
->>>>>>> origin/sania2
 @media (min-width: 769px) {
   .navbar-toggle {
     display: none; }
