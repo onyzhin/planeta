@@ -6634,6 +6634,52 @@ a {
   display: none;
   padding-top: 7px; }
 
+.modal_block h6 {
+  text-align: center;
+  color: #333333;
+  font-size: 20px;
+  padding-bottom: 16px; }
+
+.modal_block form {
+  text-align: center; }
+  .modal_block form > div {
+    padding-bottom: 9px; }
+  .modal_block form input {
+    width: 305px;
+    height: 36px;
+    background-color: #fff;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    color: #757575;
+    border: none;
+    border-radius: 4px;
+    padding: 0 18px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px; }
+  .modal_block form .button, .modal_block form .form input[type="submit"], .form .modal_block form input[type="submit"] {
+    margin-top: 10px; }
+  .modal_block form a {
+    border-bottom: 1px dotted #767676;
+    font-size: 14px;
+    color: #767676;
+    display: inline-block;
+    margin-left: 48px;
+    text-decoration: none; }
+
+.modal .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  z-index: 20; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 400px;
+    margin: 30px auto; }
+  .modal_dialog_product {
+    width: 960px; } }
+
 @media screen and (max-width: 980px) {
   .big_product_img, .big_product_img figure {
     width: 100%;
