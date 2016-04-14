@@ -36,7 +36,11 @@ a {
   display: inline-block;
   vertical-align: middle; }
 
+<<<<<<< HEAD
 .navigator > ul > li > ul:after, .spinner .btn i, .catalog-view i {
+=======
+.navigator-toggle > ul > li > ul:after, .spinner .btn i {
+>>>>>>> origin/sania2
   position: absolute;
   top: 0;
   left: 0;
@@ -6638,6 +6642,7 @@ a {
   .companies .slick-next:before {
     content: none; }
 
+<<<<<<< HEAD
 .catalog-header {
   border-radius: 8px;
   border: 1px solid #e3e3e3;
@@ -6733,6 +6738,8 @@ nav.pagination-nav {
       .pagination-custom li:last-child > span:hover {
         text-decoration: none; }
 
+=======
+>>>>>>> origin/sania2
 /*===========================================================
  Styles for developers
 ===========================================================*/
@@ -6776,7 +6783,7 @@ nav.pagination-nav {
   color: #767676;
   font-size: 14px; }
 
-.star {
+.star, .rating span {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -6784,7 +6791,7 @@ nav.pagination-nav {
   margin: 0 1px;
   background: url(../img/star-sprite.png) no-repeat top left; }
 
-.star.grey {
+.star.grey, .rating span.grey {
   background-position: top right; }
 
 .product_info {
@@ -6962,16 +6969,17 @@ nav.pagination-nav {
   border-bottom: none; }
 
 .big_product_img {
-  width: 465px;
+  width: 100%;
   border: 1px solid #e3e3e3;
   height: 461px; }
 
 .big_product_img figure {
-  width: 465px;
+  width: 568px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  height: 461px; }
+  height: 461px;
+  margin: 0 auto; }
   .big_product_img figure img {
     margin: auto; }
 
@@ -7332,6 +7340,10 @@ nav.pagination-nav {
   .basket_table tbody td a {
     font-size: 16px;
     color: #333333; }
+  .basket_table tbody td > i {
+    display: none; }
+  .basket_table tbody td a i {
+    display: none; }
 
 .basket_table tbody tr:last-child td {
   border: none;
@@ -7384,6 +7396,99 @@ nav.pagination-nav {
 .order_products {
   width: 245px;
   float: right; }
+  .order_products small {
+    display: block;
+    font-size: 14px;
+    color: #767676;
+    padding: 12px 0 0 0; }
+
+.sidebar_menu {
+  border: 1px solid #e3e3e3;
+  background-color: #fbfbfb;
+  border-radius: 6px;
+  padding: 15px 0;
+  margin-bottom: 40px; }
+  .sidebar_menu li {
+    border-bottom: 1px dotted #e3e3e3;
+    padding: 5px 15px;
+    color: #333333;
+    font-size: 14px; }
+    .sidebar_menu li:last-child {
+      border-bottom: none; }
+    .sidebar_menu li a {
+      color: #333333;
+      text-decoration: underline; }
+      .sidebar_menu li a:hover, .sidebar_menu li a.active {
+        text-decoration: none;
+        color: #e1004a; }
+
+.content_txt {
+  color: #595959;
+  font-size: 14px;
+  line-height: 20px; }
+  .content_txt h1 {
+    margin: 0;
+    padding: 0 0 13px 0;
+    color: #333333;
+    font-size: 20px; }
+  .content_txt ul li {
+    padding-left: 18px;
+    position: relative; }
+    .content_txt ul li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      background-image: url(../img/main-sprite.png);
+      background-repeat: no-repeat;
+      background-position: -111px -80px;
+      width: 5px;
+      height: 8px; }
+  .content_txt blockquote {
+    margin: 10px 0;
+    border: none;
+    font-style: italic;
+    background: #fdf2f6;
+    padding: 15px 18px;
+    font-size: 14px; }
+  .content_txt ol {
+    counter-reset: list1; }
+    .content_txt ol li {
+      padding-left: 18px;
+      position: relative; }
+      .content_txt ol li:before {
+        counter-increment: list1;
+        content: counter(list1) ". ";
+        position: absolute;
+        left: 0;
+        top: 1px;
+        color: #e1004a;
+        font-size: 14px;
+        font-weight: bold; }
+  .content_txt table {
+    width: 100%;
+    margin: 20px 0;
+    background: #fbfbfb; }
+    .content_txt table th, .content_txt table td {
+      border: 1px solid #e3e3e3;
+      padding: 10px 18px;
+      color: #333333;
+      font-size: 14px; }
+    .content_txt table th {
+      background: #f0f0f0;
+      font-weight: bold;
+      text-align: center; }
+
+.drop_basket_wrap {
+  position: absolute;
+  left: 0;
+  top: 61px;
+  z-index: 100;
+  width: 100%;
+  background: #fff;
+  padding: 23px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none; }
 
 @media (min-width: 768px) {
   .modal-dialog {
@@ -7419,12 +7524,71 @@ nav.pagination-nav {
   .hide-tablet {
     display: none; }
   .show-tablet {
-    display: block; } }
+    display: block; }
+  .basket_table tbody td:nth-child(2) {
+    width: 230px; }
+  .basket_table tbody td:nth-child(3), .basket_table tbody td:nth-child(5) {
+    width: 100px; }
+  .all_price, .order_products {
+    width: auto; } }
 
 @media screen and (max-width: 760px) {
   .big_product_img figure {
     display: block; } }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 560px) {
+  .basket_table thead {
+    display: none; }
+  .basket_table tbody tr {
+    display: block;
+    border-bottom: 1px dotted #e3e3e3;
+    overflow: hidden;
+    padding: 15px 0; }
+    .basket_table tbody tr:last-child td:nth-child(2) {
+      width: auto; }
+  .basket_table tbody td {
+    display: block;
+    float: left;
+    width: 50%;
+    border: none;
+    padding: 4px; }
+    .basket_table tbody td .basket_table_img {
+      width: 70px; }
+    .basket_table tbody td:first-child {
+      width: auto !important; }
+    .basket_table tbody td:nth-child(3), .basket_table tbody td:nth-child(5) {
+      width: 50%; }
+    .basket_table tbody td.all_price_td {
+      width: 100%;
+      float: none; }
+    .basket_table tbody td i {
+      font-style: normal;
+      display: inline-block;
+      padding: 0 7px 0  0; }
+    .basket_table tbody td > i {
+      font-size: 14px;
+      color: #767676; }
+    .basket_table tbody td .spinner {
+      display: inline-block;
+      vertical-align: middle; }
+  .text-sidebar {
+    display: none; }
+  .text-container {
+    width: 100%; } }
+
+@media screen and (max-width: 330px) {
+  .basket_table tbody td:nth-child(4) > i, .basket_table tbody td:nth-child(6) > i {
+    display: none; }
+  .basket_table tbody td:nth-child(4) a i, .basket_table tbody td:nth-child(6) a i {
+    display: none; }
+  .basket_table tbody td .continue small {
+    font-size: 11px; }
+  .basket_table tbody td .button, .basket_table tbody td .form input[type="submit"], .form .basket_table tbody td input[type="submit"] {
+    padding: 0 2px; } }
+
+>>>>>>> origin/sania2
 @media (min-width: 769px) {
   .navbar-toggle {
     display: none; }

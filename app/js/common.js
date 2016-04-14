@@ -329,6 +329,11 @@ function color_square(){
 	});
 }
 
+
+$( ".basket" ).click(function() {
+  $( '.drop_basket_wrap' ).slideToggle('slow');
+});
+
 function uislider(){
 	if ($('#html5').length){
 
