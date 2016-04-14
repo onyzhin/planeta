@@ -5,11 +5,7 @@ body *{
 }
 
 .container {
-	margin: 0 auto;
-	padding: 0 15px;
 	position: relative;
-	z-index: 1;
-	@extend %clear;
 }
 
 .main {
@@ -38,4 +34,19 @@ body *{
 
 .tabs-list{
 	margin-bottom: 30px;
+}
+
+.rating{
+	span{
+		@extend .star;
+		margin: 0 3px; 
+		&.active{
+			@extend .star-active;
+		}
+	}
+}
+
+
+.slick-slider{
+    margin-bottom: 0;
 }

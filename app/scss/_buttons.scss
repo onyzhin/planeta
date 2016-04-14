@@ -3,6 +3,7 @@
 	min-width: 100px;
 	height: $buttonHeight;
 	line-height: $buttonHeight;
+	white-space: nowrap;
 	padding: 0 15px;
 	position: relative;
 	text-decoration: none !important;
@@ -83,4 +84,8 @@ button{
 	    border-top-right-radius: 0;
 	    border-bottom-right-radius: 0;
 	}
+}
+
+.btn{
+	min-width: auto;
 }

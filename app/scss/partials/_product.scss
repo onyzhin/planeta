@@ -1,0 +1,196 @@
+.product{
+	&-slider{
+		margin-bottom: 18px;
+		height: 302px;
+		position: relative;
+		z-index: 2;
+		.slick-list{
+			overflow: visible; 
+		}
+		.slick-slider{
+			margin-bottom: 0;
+		}
+	}
+	&-collections{
+		position: relative;
+		margin-bottom: 18px;
+		z-index: 2;
+		.btn-default{
+			position: relative;
+			z-index: 3;
+		}
+		.carousel{
+			overflow-x: hidden; 
+			height: 472px;
+			position: relative;
+			z-index: 5;
+			@media (min-width: $container-lg){
+				margin-right: -2px; 
+			}
+		}
+		&-header{
+			@extend %clear;
+			h3{
+				float: left;
+				margin-right: 5%;
+				a{
+					color: $ctextLigthColor;
+					border-bottom: 1px dotted $ctextLigthColor;
+					line-height: 20px;
+					display: block;
+					&:hover{
+						border-color:transparent;
+					}
+					&.active{
+						color: $ctextColor;
+					}
+				}
+			}
+		}
+	}
+	&-item{
+		border: 1px solid #e3e3e3;
+		padding-bottom: 0;
+		padding-right: 18px;
+		padding-left: 18px;
+		outline: none;
+		position: relative;
+		a{
+			color: $baseColor;
+			outline: none;
+		}
+		&-labels{
+			width: 100px;
+			position: absolute;
+			left: 0;
+			bottom: 18px;
+			text-align: left; 
+			.label{
+				margin-bottom: 5px;
+				display: inline-block;   
+				font-size: 14px;
+	    		font-weight: normal;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		&-postpone{
+			position: absolute;
+			z-index: 2;
+			top: 0px; 
+			left: 19px;
+			width: 31px;
+			height: 21px;
+			line-height: 19px; 
+			text-align: center;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			@include vertical-gradient-simple($buttonLightColor, $buttonDarkColor); 
+			&.disable{
+				background: $baseColor;
+				cursor: default;
+			}
+			&:not(.disable):active{
+				background: $buttonDarkColor;
+			}
+		}
+		&-image{
+			text-align: center;
+			height: 193px;
+			position: relative;
+			a{
+				@extend %inline-middle;
+			}
+		}
+		h5{
+			margin-top: 0;
+			line-height: 19px;
+			margin-bottom: 2px;
+			height: 39px;
+		}
+		&-rate{
+			margin-bottom: 8px;
+			.rating{
+				@extend %inline-middle;
+			    margin-right: 12px;
+			}
+			a{
+				@extend %inline-middle;
+				color: #767676; 				
+			}
+		}
+		&-price{
+			font-size: 16px;
+			font-weight: bold;
+			padding-bottom: 16px;
+		}
+		&-hidden{
+			position: absolute;
+			top: calc(100% - 0px);
+			left: -1px;
+			right: -1px;
+			padding: 0 15px 18px 15px;
+			display: none;
+			background: #fff;
+			border: 1px solid #e3e3e3;
+			padding-top: 11px;
+			border-top: 0;
+			z-index: 5;
+		}
+		&-basket{
+			@extend %clear;
+  			margin-bottom: 16px;
+			.spinner{
+				float: left;
+			}
+			&>.button{
+				float: right;
+				width: 90px;
+				height: 31px;
+				line-height: 29px;
+			}
+		}
+		&-compare{
+			text-align: center;
+  			margin-bottom: 16px; 
+			i{
+				margin-right: 10px;
+			}
+			span{
+				@extend %inline-middle;
+				border-bottom: 1px dotted $baseColor;
+				line-height: 13px;
+			}
+			a{
+				&:hover{
+					span{
+						border-color: transparent;
+					}
+				}
+			}
+		}
+		p{
+			color: #767676; 
+			margin-bottom: 0;
+			max-height: 57px;
+		}
+		&:hover{
+			.product-item-hidden{
+				display: block;
+			}
+		}
+	}
+}
+
+.carousel{
+	&-arrows{
+		position: relative;
+		.slick-prev{
+			@extend .icon-arrow-c-left;  
+		}
+		.slick-next{
+			@extend .icon-arrow-c-right; 
+		} 
+	}
+}

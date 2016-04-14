@@ -20,11 +20,12 @@ a{
 }
 .subheading,.ctext h2,h2{
 	@extend %heading;
-	font-size: 25px;
+	font-size: 24px;
+    margin-bottom: 12px;
 }
 .thirdheading,.ctext h3,h3{
 	@extend %heading;
-	font-size: 22px;
+	font-size: 20px;
 }
 .fourheading,.ctext h4,h4{
 	@extend %heading;
@@ -37,9 +38,10 @@ a{
 
 .ctext {
 	p {
-		margin:0 0 15px 0;
-		line-height: 16px; 
+		margin:0 0 13px 0;
+		line-height: 19px; 
 		font-size: $bodyFontSize; 
+		color: $ctextLigthColor;
 
 		&:last-child{margin-bottom:0;}
 	}
