@@ -18,9 +18,9 @@
 	vertical-align: middle;
 }
 .hiddenBlock {
-	position: absolute;
-	left: -99999em;
-	top: -99999em;
+	position: absolute !important;
+	left: -99999em !important;
+	top: -99999em !important;
 }
 .hidden{
 	display: none;
@@ -36,6 +36,7 @@ body {
 	background: $bodyBackground;
 	color: $baseColor;
 	position: relative;
+	overflow-x: hidden;
 }
 img {
 	vertical-align: bottom;

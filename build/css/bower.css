@@ -444,7 +444,7 @@ th {
 .slick-prev,
 .slick-next
 {
-    font-size: 0;
+    font-size: 0px;
     line-height: 0;
 
     position: absolute;
@@ -466,6 +466,7 @@ th {
     border: none;
     outline: none;
     background: transparent;
+    z-index: 1;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -505,7 +506,7 @@ th {
 
 .slick-prev
 {
-    left: -25px;
+    left: 0;
 }
 [dir='rtl'] .slick-prev
 {
@@ -523,7 +524,7 @@ th {
 
 .slick-next
 {
-    right: -25px;
+    right: 0;
 }
 [dir='rtl'] .slick-next
 {

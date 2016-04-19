@@ -15,19 +15,285 @@
     <link rel="stylesheet" type="text/css" href="css/develop-style.css" media="all" />
 </head>
 <body>  
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sprite icon-remove-disable"></span></button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal_block">
+          <h6>Регистрация</h6>
+          <form action="#">
+            <div>
+              <input type="text" placeholder='Имя'>
+            </div>
+            <div>
+              <input type="text" placeholder='Фамилия'>
+            </div>
+            <div>
+              <input type="text" placeholder='Телефон'>
+            </div>
+            <div>
+              <input type="text" placeholder='E-mail'>
+            </div>
+            <div>
+              <input type="password" placeholder='Пароль'>
+            </div>
+            <div>
+              <input type="password" placeholder='Пароль еще раз'>
+            </div>
+            <div>
+              <button class="button">Зарегистрироваться</button>
+            </div>
+          </form>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sprite icon-remove-disable"></span></button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal_block">
+          <h6>Заказать обратный звонок</h6>
+          <form action="#">
+            <div>
+              <input type="text" placeholder='Имя'>
+            </div>
+            <div>
+              <input type="text" placeholder='Телефон'>
+            </div>
+            <div>
+              <button class="button">Отправить</button>
+            </div>
+          </form>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sprite icon-remove-disable"></span></button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal_block">
+          <h6>Авторизация</h6>
+          <form action="#">
+            <div>
+              <input type="text" placeholder='E-mail'>
+            </div>
+            <div>
+              <input type="password" placeholder='Пароль'>
+            </div>
+            <div class="text-left">
+              <a href="#">Забыли пароль?</a>
+            </div>
+            <div>
+              <button class="button">Войти</button>
+            </div>
+          </form>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_product" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal_dialog_product" role="document">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sprite icon-remove-disable"></span></button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal_product_content">
+            <div class="title">Ноутбук Apple MacBook Pro, MD101RU/A</div>
+
+            <div class="product_top_info">
+              <span>Артикул: <small>12345678</small></span>
+              <span>
+                Оценка покупателей: 
+                <nav>
+                  <a href="#" class="star"></a>
+                  <a href="#" class="star"></a>
+                  <a href="#" class="star"></a>
+                  <a href="#" class="star"></a>
+                  <a href="#" class="star grey"></a>
+                </nav>
+                 <small>(7 отзывов)</small>
+              </span>
+            </div>
+
+            <div class="product_wrap">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="big_product_img">
+                    <div><figure><img src="img/notebook_big.png" alt=""></figure></div>
+                    <div><figure><img src="img/notebook_big2.png" alt=""></figure></div>
+                    <div><figure><img src="img/notebook_big.png" alt=""></figure></div>
+                    <div><figure><img src="img/notebook_big2.png" alt=""></figure></div>
+                    <div><figure><img src="img/notebook_big.png" alt=""></figure></div>
+                    <div><figure><img src="img/notebook_big2.png" alt=""></figure></div>
+                    <div><figure><img src="img/notebook_big.png" alt=""></figure></div>
+                    <div><figure><img src="img/notebook_big2.png" alt=""></figure></div>
+                  </div>
+                  <div class="product_imgs">
+                    <div class="product_img">
+                      <a><img src="img/notebook_small.png" alt=""></a>
+                    </div>
+                    <div class="product_img">
+                      <a><img src="img/notebook_small2.png" alt=""></a>
+                    </div>
+                    <div class="product_img">
+                      <a><img src="img/notebook_small.png" alt=""></a>
+                    </div>
+                    <div class="product_img">
+                      <a><img src="img/notebook_small2.png" alt=""></a>
+                    </div>
+                    <div class="product_img">
+                      <a><img src="img/notebook_small.png" alt=""></a>
+                    </div>
+                    <div class="product_img">
+                      <a><img src="img/notebook_small2.png" alt=""></a>
+                    </div>
+                    <div class="product_img">
+                      <a><img src="img/notebook_small.png" alt=""></a>
+                    </div>
+                    <div class="product_img">
+                      <a><img src="img/notebook_small2.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6  col-sm-6">
+                  <div class="product_info">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                          <div class="price">
+                            <strong>64 990 <span>руб.</span></strong>
+                            <small>65 990 руб.</small>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                          <a href="#" class="button">В корзину</a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="to_compare_block">
+                              <a href="#"><span class="sprite icon-compare-active"></span><em>К сравнению</em></a>
+                              <a href="#"><span class="sprite icon-heart-active-middle"></span><em>Отложить</em></a>
+                            </div>  
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="discount">
+                            <span>Вы экономите <strong>1 000</strong> руб.!</span>
+                            <nav>
+                              <span class="btn-action">Акция</span>
+                              <span class="btn-hit">Хит продаж</span>
+                              <span class="btn-new">Новинка</span>
+                            </nav>
+                          </div>  
+                        </div>
+                      </div>
+                  </div>
+                  <div class="choose_color">
+                    <strong>Выберите цвет:</strong>
+                    <div class="color_square">
+                      <span class="white"><input type="radio" id="white" name="colors"></span>
+                      <span class="black" style="background: #000;"><input type="radio" name="colors" id="black"></span>
+                      <span class="gray active" style="background: #c9c9c9;"><input type="radio" id="gray" checked="checked" name="colors"></span>
+                    </div>
+                    <div class="color_text">
+                      <label for="white" class="white">Белый</label>
+                      <label for="black" class="black">Черный</label>
+                      <label for="gray" class="gray active">Серый</label>
+                    </div>
+                  </div>
+                  <div class="product_content hide-tablet">
+                    <p>Одно из основных достоинств нового Apple iMac - это его дисплей, выполненный по технологии in-plane switching (IPS). Великолепный дисплей iMac обеспечивает чёткое изображение и точную цветопередачу под любым углом. Благодаря мощному процессору Intel Core четвертого поколения новый iMac по скорости работы превосходит все аналоги. В стандартный комплект поставки iMac входит мышь Magic Mouse, которая поддерживает простые жесты, выполняемые прямо на её гладкой поверхности. Одним пальцем можно делать прокрутку в любом направлении, двумя пальцами - листать веб-страницы и фотографии. А касания и двойные касания можно делать в любой точке поверхности.</p>
+                    <table>
+                      <tr>
+                        <td><span>Операционная система</span></td>
+                        <td><span>Mac OS 10.8 Mountain Lion</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Цвет  </span></td>
+                        <td><span>Серебристый</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Размер LCD экрана  </span></td>
+                        <td><span>27"</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Разрешение экрана </span></td>
+                        <td><span>2560 x 1440</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">Подробные характеристики</a></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+             <div class="product_content show-tablet">
+                <p>Одно из основных достоинств нового Apple iMac - это его дисплей, выполненный по технологии in-plane switching (IPS). Великолепный дисплей iMac обеспечивает чёткое изображение и точную цветопередачу под любым углом. Благодаря мощному процессору Intel Core четвертого поколения новый iMac по скорости работы превосходит все аналоги. В стандартный комплект поставки iMac входит мышь Magic Mouse, которая поддерживает простые жесты, выполняемые прямо на её гладкой поверхности. Одним пальцем можно делать прокрутку в любом направлении, двумя пальцами - листать веб-страницы и фотографии. А касания и двойные касания можно делать в любой точке поверхности.</p>
+                <table>
+                  <tr>
+                    <td><span>Операционная система</span></td>
+                    <td><span>Mac OS 10.8 Mountain Lion</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Цвет  </span></td>
+                    <td><span>Серебристый</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Размер LCD экрана  </span></td>
+                    <td><span>27"</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Разрешение экрана </span></td>
+                    <td><span>2560 x 1440</span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Подробные характеристики</a></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <header class="header">
         <div class="header-top">
           <div class="container">
          		<div class="row">
          			<div class="col-lg-3 col-sm-4 hidden-xs">    
-         				<div class="header-phone">
+         				<div class="header-phone"> 
          					<p>8 (812) <b>123-45-67</b></p>
-         					<a href="#">Заказать обратный звонок</a>
+         					<a href="#" data-toggle="modal" data-target="#myModal2">Заказать обратный звонок</a>
          				</div>
          			</div>
-         			<div class="col-lg-9 col-sm-8 col-xs-12"> 
-                  <div class="header-detail basket">
+              <div class="col-xs-3 visible-xs text-center xs-clear"> 
+                  <div class="navbar-toggle">
+                      <span class="icon-container">
+                          <span class="line line01"></span>
+                          <span class="line line02"></span>
+                          <span class="line line03"></span>
+                          <span class="line line04"></span>
+                      </span>
+                  </div>
+                  <span class="vfix"></span>
+              </div>
+         			<div class="col-lg-9 col-sm-8 col-xs-9 xs-clear"> 
+                  <div class="header-detail basket col-xs-4">
                     <a href="#" class="header-detail-inner">
                       <i class="sprite icon-basket-active"></i> 
                       <span class="header-detail-title">Корзина</span> 
@@ -35,7 +301,7 @@
                       <span class="header-detail-title">39 790 руб.</span>
                     </a> 
                   </div>  
-                  <div class="header-detail postpone">
+                  <div class="header-detail postpone col-xs-4">
                     <a href="#" class="header-detail-inner">
                       <i class="sprite icon-heart-active-big"></i> 
                       <span class="header-detail-title">Отложено</span> 
@@ -43,7 +309,7 @@
                       <span class="header-detail-title">9 890 руб.</span> 
                     </a>
                   </div>
-                  <div class="header-detail compare disable">
+                  <div class="header-detail compare disable col-xs-4">
                     <div class="header-detail-inner">
                       <i class="sprite icon-compare-active"></i> 
                       <span class="header-detail-title">Сравнение</span> 
@@ -59,17 +325,13 @@
           	<div class="row">
           		<div class="col-sm-3">
           			<a href="/" class="header-logo"><img src="img/logo.png" alt=""></a>
+                <a href="#" class="menu-toggle"></a>
                 <div class="navigator">
-  <div class="button button-block navigator-toggle">
+  <div class="button button-block navigator-toggle hidden-xs">
     Каталог товаров <i class="sprite icon-burger"></i>
-<<<<<<< HEAD
   </div>
   <ul>
     <li><a href="#"><span>Товары для дома, сада и ремонта</span></a><ul>
-=======
-    <ul>
-      <li><a href="#"><span>Товары для дома, сада и ремонта</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -95,11 +357,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>      
-<<<<<<< HEAD
     <li><a href="#"><span>Телевизоры и видео</span></a><ul>
-=======
-      <li><a href="#"><span>Телевизоры и видео</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -125,11 +383,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Компьютеры, ноутбуки и планшеты</span></a><ul>
-=======
-      <li><a href="#"><span>Компьютеры, ноутбуки и планшеты</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -155,11 +409,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Телефоны и связь</span></a><ul>
-=======
-      <li><a href="#"><span>Телефоны и связь</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -185,11 +435,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Техника для кухни</span></a><ul>
-=======
-      <li><a href="#"><span>Техника для кухни</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -215,11 +461,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Техника для дома</span></a><ul>
-=======
-      <li><a href="#"><span>Техника для дома</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -245,11 +487,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Аудиотехника</span></a><ul>
-=======
-      <li><a href="#"><span>Аудиотехника</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -275,7 +513,6 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li>
       <a href="#"><span>Фото и видео</span></a>
       <ul>
@@ -322,54 +559,6 @@
       </ul> 
     </li>
     <li><a href="#"><span>Красота и здоровье</span></a><ul>
-=======
-      <li>
-        <a href="#"><span>Фото и видео</span></a>
-        <ul>
-          <li><a href="#"><span>Зеркальные фотоаппараты</span></a></li>
-          <li><a href="#"><span>Цифровые фотоаппараты</span></a></li>
-          <li><a href="#"><span>Цифровые фотоаппарты со сменной оптикой</span></a></li>
-          <li><a href="#"><span>Цифровые видеокамеры</span></a></li>
-          <li><a href="#"><span>Экшн-камеры</span></a></li>
-          <li>
-            <a href="#"><span>Объективы, оптика, вспышки</span></a>
-            <ul>
-              <li><a href="#"><span>Объективы</span></a></li>
-              <li><a href="#"><span>Вспышки</span></a></li>
-              <li><a href="#"><span>Бинокли</span></a></li>
-            </ul>
-          </li>
-          <li><a href="#"><span>Цифровые фоторамки</span></a></li>
-          <li><a href="#"><span>Карты памяти</span></a></li>
-          <li>
-            <a href="#"><span>Системы видеонаблюдения</span></a>
-            <ul>
-              <li><a href="#"><span>Готовые комплекты</span></a></li>
-              <li><a href="#"><span>IP-камеры</span></a></li>
-              <li><a href="#"><span>Муляжи</span></a></li>
-              <li><a href="#"><span>Рекордеры</span></a></li>
-              <li><a href="#"><span>Дверные звонки</span></a></li>
-              <li><a href="#"><span>Аксессуары</span></a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><span>Аксессуары</span></a>
-            <ul>
-              <li><a href="#"><span>Информационные носители</span></a></li>
-              <li><a href="#"><span>Сумки и чехлы</span></a></li>
-              <li><a href="#"><span>Объективы, оптика, вспышки</span></a></li>
-              <li><a href="#"><span>Штативы</span></a></li>
-              <li><a href="#"><span>Фотоальбомы</span></a></li>
-              <li><a href="#"><span>Фоторамки</span></a></li>
-              <li><a href="#"><span>Средства для ухода за оптикой</span></a></li>
-              <li><a href="#"><span>Элементы питания</span></a></li>
-            </ul>
-          </li>
-          <li><a href="#"><span>Подарочные карты</span></a></li>
-        </ul> 
-      </li>
-      <li><a href="#"><span>Красота и здоровье</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -395,11 +584,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Автомобильная электроника</span></a><ul>
-=======
-      <li><a href="#"><span>Автомобильная электроника</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -425,11 +610,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Игры, софт, развлечения</span></a><ul>
-=======
-      <li><a href="#"><span>Игры, софт, развлечения</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -455,11 +636,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
     <li><a href="#"><span>Аксессуары</span></a><ul>
-=======
-      <li><a href="#"><span>Аксессуары</span></a><ul>
->>>>>>> origin/sania2
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li>
 		<a href="#"><span>Lorem ipsum</span></a>
@@ -485,12 +662,7 @@
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 	<li><a href="#"><span>Lorem ipsum</span></a></li>
 </ul></li>
-<<<<<<< HEAD
   </ul>
-=======
-    </ul>
-  </div>
->>>>>>> origin/sania2
 </div>
           		</div> 
           		<div class="col-sm-9"> 
@@ -505,19 +677,11 @@
                         </div>
                       </div>
                       <div class="pull-right">
-                        <div class="header-authorization"><i class="sprite icon-key"></i> <a href="#">Авторизация</a> / <a href="#">Регистрация</a></div>
+                        <div class="header-authorization"><i class="sprite icon-key"></i> <a href="#" data-toggle="modal" data-target="#myModal3">Авторизация</a> / <a href="#"  data-toggle="modal" data-target="#myModal">Регистрация</a></div>
                       </div>
                     </div>
                     <div class="header-menu">
-                      <div class="navbar-toggle">
-    <span class="icon-container">
-        <span class="line line01"></span>
-        <span class="line line02"></span>
-        <span class="line line03"></span>
-        <span class="line line04"></span>
-    </span>
-</div>
-<nav class="navbar topMenu">
+                      <nav class="navbar topMenu">
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li><a href="#">Адреса магазинов</a></li>
@@ -619,7 +783,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-6">
-                  <a href="#" class="btn btn-danger">В корзину</a>
+                  <a href="#" class="button">В корзину</a> 
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="to_compare_block">
@@ -738,7 +902,7 @@
 		<div class="product-item-compare">
 			<a href="#"><i class="sprite icon-compare-active"></i><span>К сравнению</span></a>
 		</div>
-		<p>LED телевизор с цифровым тюнером и богатым набором различных интерфейсов.</p>
+		<p>Описание</p>
 	</div>
 </div>
         <div class="product-item"> 
@@ -766,7 +930,7 @@
 		<div class="product-item-compare">
 			<a href="#"><i class="sprite icon-compare-active"></i><span>К сравнению</span></a>
 		</div>
-		<p>LED телевизор с цифровым тюнером и богатым набором различных интерфейсов.</p>
+		<p>Описание</p>
 	</div>
 </div>
         <div class="product-item"> 
@@ -794,7 +958,7 @@
 		<div class="product-item-compare">
 			<a href="#"><i class="sprite icon-compare-active"></i><span>К сравнению</span></a>
 		</div>
-		<p>LED телевизор с цифровым тюнером и богатым набором различных интерфейсов.</p>
+		<p>Описание</p>
 	</div>
 </div>
         <div class="product-item"> 
@@ -822,7 +986,7 @@
 		<div class="product-item-compare">
 			<a href="#"><i class="sprite icon-compare-active"></i><span>К сравнению</span></a>
 		</div>
-		<p>LED телевизор с цифровым тюнером и богатым набором различных интерфейсов.</p>
+		<p>Описание</p>
 	</div>
 </div>
         <div class="product-item"> 
@@ -850,7 +1014,7 @@
 		<div class="product-item-compare">
 			<a href="#"><i class="sprite icon-compare-active"></i><span>К сравнению</span></a>
 		</div>
-		<p>LED телевизор с цифровым тюнером и богатым набором различных интерфейсов.</p>
+		<p>Описание</p>
 	</div>
 </div>
       </div>
@@ -998,15 +1162,7 @@
         <div class="footer-copyright">
 	        <div class="container">
 	        	<div class="row">
-<<<<<<< HEAD
 	        		<div class="col-sm-6 pull-right footer-copyright-col">
-=======
-	        		<div class="col-sm-6">
-	        			<p>Все права защищены, 2015.</p>
-						<p>Интернет-магазин бытовой техники и электроники.</p>
-	        		</div>
-	        		<div class="col-sm-6">
->>>>>>> origin/sania2
 		        		<div class="socials"> 
 		        			<a href="#"><i class="icon-socials vk"></i></a>
 		        			<a href="#"><i class="icon-socials fb"></i></a>
@@ -1015,19 +1171,15 @@
 		        			<a href="#"><i class="icon-socials gp"></i></a>
 	        			</div>
 	        		</div>
-<<<<<<< HEAD
 	        		<div class="col-sm-6 pull-right footer-copyright-col">
 	        			<p>Все права защищены, 2015.</p>
 						<p>Интернет-магазин бытовой техники и электроники.</p>
 	        		</div>
-=======
->>>>>>> origin/sania2
 	        	</div>
 	        	</div>
         </div>
     </footer>  
     <script src="js/bower.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>

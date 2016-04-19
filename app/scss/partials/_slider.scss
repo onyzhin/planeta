@@ -12,20 +12,57 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
+        padding-left: 14%;
+   		 padding-top: 6.6%;
+		h4{
+			color: $ctextLigthColor;
+		    font-size: 30px;
+		    margin-bottom: 0; 
+		}
+		h2{
+			color: $baseColor;
+		    font-size: 64px;
+   			font-weight: bold;
+   			margin-top: 0;
+		    margin-bottom: 29px;
+		}
 		.container{
 			height: 100%;
 		}
 		.button{
-			bottom: 113px;
-			left: 94px;
-			position: absolute;
 			height: 50px;
 			line-height: 50px;
-			font-size: 20px;
-			width: 206px;
+			font-size: 24px;
+			width: auto;
+			max-width: 220px;
+			em{
+				font-size: 34px;
+			}
 		}
 	}
 	.slick-slide{
 		outline: none;
 	}
+	.slick-prev{
+		@extend .icon; 
+		@extend .arrows-dis-left ;  
+	    position: absolute;
+	    &:hover{
+	    	@extend .arrows-act-left;
+	    }
+	    &:before, &:after{
+	    	content: '';
+	    }
+	}
+	.slick-next{
+		@extend .icon; 
+		@extend .arrows-dis-right ;  
+	    position: absolute;
+	    &:hover{
+	    	@extend .arrows-act-right;
+	    }
+	    &:before, &:after{
+	    	content: '';
+	    }
+	}  
 }

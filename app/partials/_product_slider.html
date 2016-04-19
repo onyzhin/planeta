@@ -1,12 +1,12 @@
-<div class="product-collections">
+<div class="product-collections tabs"> 
 	<div class="container">
 		<div class="product-collections-header">
-			<h3>Популярное</h3>
-			<h3><a href="#">Новинки</a></h3>
-			<h3><a href="#">Акции</a></h3>
-			<h3><a href="#">Распродажа</a></h3>
+			<h3><a href="#" data-tabid="1">Популярное</a></h3>
+			<h3><a href="#" data-tabid="2">Новинки</a></h3>
+			<h3><a href="#" data-tabid="3">Акции</a></h3>
+			<h3><a href="#" data-tabid="4">Распродажа</a></h3>
 		</div>
-		<div class="product-slider">
+		<div class="product-slider" data-tab="1">
 			<div class="carousel-arrows"></div>
 			<div class="carousel">
 				@@include('_product_item.html', {
@@ -15,7 +15,8 @@
 				    "disable": "disable",
 				    "icon": "icon-heart-disable-small",
 				    "price": "4 890 руб.",
-				    "hidden": ""
+				    "hidden": "",
+					"desc" :"LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
 				})
 				@@include('_product_item.html', {
 				    "name": "LED телевизор Supra STV-LC32T400WL",
@@ -23,7 +24,8 @@
 				    "disable": "",
 				    "icon": "icon-heart-active-small",
 				    "price": "29 990 руб.",
-				    "hidden": "hidden"
+				    "hidden": "hidden",
+					"desc" :"2 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
 				})
 				@@include('_product_item.html', {
 				    "name": "LED телевизор Supra STV-LC32T400WL",
@@ -31,7 +33,8 @@
 				    "disable": "",
 				    "icon": "icon-heart-active-small",
 				    "price": "29 990 руб.",
-				    "hidden": "hidden"
+				    "hidden": "hidden",
+					"desc" :"3 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
 				})
 				@@include('_product_item.html', {
 				    "name": "LED телевизор Supra STV-LC32T400WL",
@@ -39,7 +42,8 @@
 				    "disable": "",
 				    "icon": "icon-heart-active-small",
 				    "price": "29 990 руб.",
-				    "hidden": "hidden"
+				    "hidden": "hidden", 
+					"desc" :"4 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
 				})
 				@@include('_product_item.html', {
 				    "name": "LED телевизор Supra STV-LC32T400WL",
@@ -47,7 +51,158 @@
 				    "disable": "",
 				    "icon": "icon-heart-active-small",
 				    "price": "29 990 руб.",
-				    "hidden": "hidden"
+				    "hidden": "hidden",
+					"desc" :"5 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
+				})
+			</div>
+		</div>
+		<div class="product-slider" data-tab="2">
+			<div class="carousel-arrows"></div>
+			<div class="carousel">
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"2 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab2"
+				})
+				@@include('_product_item.html', {
+				    "name": "Смартфон QUMO QUEST 503 black",
+				    "img": "product-2.png", 
+				    "disable": "disable",
+				    "icon": "icon-heart-disable-small",
+				    "price": "4 890 руб.",
+				    "hidden": "",
+					"desc" :"LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab2"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"3 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab2"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden", 
+					"desc" :"4 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab2"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"5 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab2"
+				})
+			</div>
+		</div>
+		<div class="product-slider" data-tab="3">
+			<div class="carousel-arrows"></div>
+			<div class="carousel">
+				@@include('_product_item.html', {
+				    "name": "Смартфон QUMO QUEST 503 black",
+				    "img": "product-2.png", 
+				    "disable": "disable",
+				    "icon": "icon-heart-disable-small",
+				    "price": "4 890 руб.",
+				    "hidden": "",
+					"desc" :"LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab3"
+				})
+				@@include('_product_item.html', {
+				    "name": "Смартфон QUMO QUEST 503 black",
+				    "img": "product-2.png", 
+				    "disable": "disable",
+				    "icon": "icon-heart-disable-small",
+				    "price": "4 890 руб.",
+				    "hidden": "",
+					"desc" :"LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab3"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"2 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab3"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"3 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab3"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden", 
+					"desc" :"4 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab3"
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"5 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов. tab3"
+				})
+			</div>
+		</div>
+		<div class="product-slider" data-tab="4">
+			<div class="carousel-arrows"></div>
+			<div class="carousel">
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"2 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"3 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden", 
+					"desc" :"4 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
+				})
+				@@include('_product_item.html', {
+				    "name": "LED телевизор Supra STV-LC32T400WL",
+				    "img": "product-1.png",
+				    "disable": "",
+				    "icon": "icon-heart-active-small",
+				    "price": "29 990 руб.",
+				    "hidden": "hidden",
+					"desc" :"5 LED телевизор с цифровым тюнером и богатым набором различных интерфейсов."
 				})
 			</div>
 		</div>

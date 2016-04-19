@@ -10,7 +10,7 @@ a{
 	@extend %link;
 	border:0;
 
-	&:hover{color:$baseColorHover;text-decoration: none;}
+	&:hover, &:focus{color:$baseColorHover;text-decoration: none;}
 }
 
 .mainheading,.ctext h1,h1{

@@ -137,16 +137,27 @@ function expandTool(){
 
 function navbartoggle(){
 	$('.navbar-toggle').click(function(){
-		var navbar = $('.navbar-collapse');
+		var navbar = $('.navigator > ul');
 		if($(this).is('.active')){
 			$(this).removeClass('active');
-			navbar.stop().slideUp().removeClass('active');
+			navbar.stop().removeClass('active');
 		}
 		else{
 			$(this).addClass('active');
-			navbar.stop().slideDown().addClass('active');
+			navbar.stop().addClass('active');
 		}
 		return false;
+	});
+
+	$(document).click(function(e){
+
+	    // Check if click was triggered on or within #menu_content
+	    if( $(e.target).closest('.navigator > ul').length > 0 ) {
+	        return false;
+	    }
+
+	    // Otherwise
+	    $('.navigator > ul, .navbar-toggle').stop().removeClass('active');
 	});
 }
 
@@ -166,9 +177,10 @@ function tabs(block){
 				event.preventDefault();
 				var tabid=$(this).data('tabid');
 				$('[data-tabid]',$wrap).removeClass('active');
-				$('[data-tabid="'+tabid+'"]',$wrap).addClass('active');
-				$('[data-tab]',$wrap).removeClass('active').addClass('hidden');
-				$('[data-tab="'+tabid+'"]',$wrap).addClass('active').removeClass('hidden');
+				$('[data-tabid="'+tabid+'"]',$wrap).addClass('active'); 
+				$('[data-tab]',$wrap).removeClass('active').addClass('hiddenBlock');
+				$('[data-tab="'+tabid+'"]',$wrap).addClass('active').removeClass('hiddenBlock');
+				carouselResponsive(); 
 			})
 			if ($('.active[data-tabid]',$wrap).length>0)
 				$('.active[data-tabid]',$wrap).click();
@@ -223,7 +235,7 @@ function sendForm(){
 }
 
 function navigatorList(){
-	$('.navigator-toggle > ul > li > ul > li').each(function(){
+	$('.navigator > ul > li > ul > li').each(function(){
 		if($(this).find('ul').length > 0){
 			$(this).addClass('hasSub');
 		}
@@ -252,26 +264,48 @@ function spinner() {
 }
 
 function productHidden(){
+	var $currProduct;
 	if ($(window).width() > 767) {
 		$('.product-item').hover(function(){
-			var $hidden = $('<div class="product-item-hidden"></div>').append($(this).find('.product-item-hidden').clone()).html();
-			console.log($hidden); 
-			var pwidth = $(this).outerWidth();
-			var ptop = $(this).offset().top + $(this).height();
-			var pleft = $(this).offset().left;
-			$('body').append($hidden);
-			$('body>.product-item-hidden').css({ 
-				'display' : 'block',
-				'position' : 'absolute',
-				'left' : pleft,
-				'right' : 'auto',
-				'top' : ptop, 
-				'width' : pwidth
-			})
+			if (!($('body>.product-item-hidden').length>0)){
+				var $hidden = $('<div class="product-item-hidden"></div>').append($(this).find('.product-item-hidden').clone()).html();
+				$currProduct = $(this);
+				var pwidth = $(this).outerWidth();
+				var ptop = $(this).offset().top + $(this).height();
+				var pleft = $(this).offset().left;
+				$('body').append($hidden);
+				$('body>.product-item-hidden').css({ 
+					'display' : 'block',
+					'position' : 'absolute',
+					'left' : pleft,
+					'right' : 'auto', 
+					'top' : ptop, 
+					'width' : pwidth
+				})
+			}
 		},
 		function(){
-			$('body>.product-item-hidden').remove(); 
+			console.log($('body>.product-item-hidden:hover').length);
+			if(!($('body>.product-item-hidden:hover').length>0))
+			 $('body>.product-item-hidden').remove(); 
 		})
+		$(document).on('mouseleave', 'body>.product-item-hidden',  function(){	
+			console.log('curr product body in hover'+$currProduct.filter(':hover').length);	
+			if(!($currProduct.filter(':hover').length>0))
+			 $('body>.product-item-hidden').remove();
+		})
+
+		$(document).on('change', 'body>.product-item-hidden input', function(){
+			console.log($(this).val());
+		})
+		  $(document).on('click', 'body>.product-item-hidden .spinner .btn:last-of-type', function() {
+
+		 	var $spinner = $(this).closest('.spinner');
+		 	var $input = $spinner.find('input');
+	    	var value = parseInt($input.val(), 10) + 1;
+		    $currProduct.find('.spinner input').val( value); 
+		    console.log($currProduct.find('.spinner input').val() + value);
+		  }); 
 	}
 }
 
@@ -401,13 +435,13 @@ function topMenu(){
 		$('.hidden-menu').slideToggle(0);
 	})
 }
-
+ 
 function carouselResponsive(){
 	var $slick_slider = $('.carousel'); 
 	var settings = { 
 		slidesToShow: 4,
 		slidesToScroll: 4,
-		//appendArrows:$('.carousel-arrows'),
+		arrows: true,
 		fade: false,
 		responsive: [
 		{

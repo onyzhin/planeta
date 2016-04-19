@@ -39,6 +39,9 @@ $nav-max-w: 100%;
 		//width: $container-sm - $grid-gutter-width; 
 		width: 100%;
 		padding-bottom: 13px;
+		&.active{
+			transform: translateX(0);
+		}
 		@media (min-width: $container-lg){
 			//width: $container-lg - $grid-gutter-width; 
 		}
@@ -52,6 +55,9 @@ $nav-max-w: 100%;
 			overflow-y: scroll;
 			overflow-x: visible;
 			width: 307px;
+			transform: translateX(-307px);
+			transition: 300ms all ease;
+			display: block;
 		}
 		&:after{
 			content: '';

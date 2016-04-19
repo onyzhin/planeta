@@ -4,17 +4,16 @@
 		position: relative;
 		z-index: 2;
 		.slick-list{
-			overflow: visible; 
+			overflow: hidden; 
 		}
 		.slick-slider{
 			margin-bottom: 0;
 		}
 		.carousel{
-			overflow: hidden;
 			position: relative;
 			z-index: 5;
 			@media (min-width: $container-lg){
-				margin-right: -2px; 
+			 	margin-right: -2px; 
 			}
 		}
 	}
@@ -28,6 +27,9 @@
 		}
 		&-header{
 			@extend %clear;
+			position: relative;
+			z-index: 5;
+			width: 50%;
 			h3{
 				float: left;
 				margin-right: 5%;
@@ -36,11 +38,12 @@
 					border-bottom: 1px dotted $ctextLigthColor;
 					line-height: 20px;
 					display: block;
-					&:hover{
-						border-color:transparent;
-					}
-					&.active{
+					&:hover,
+					&.active,
+					&:focus{
 						color: $ctextColor;
+						border-color:transparent;
+						text-decoration: none;
 					}
 				}
 			}
@@ -193,14 +196,27 @@
 	}
 }
 
-.carousel{
-	&-arrows{
-		position: relative;
-		.slick-prev{
-			@extend .icon-arrow-c-left;  
-		}
-		.slick-next{
-			@extend .icon-arrow-c-right; 
-		} 
+.product-slider{
+	.slick-prev{
+		@extend .sprite; 
+		@extend .icon-arrow-c-left;   
+	    right: 30px;
+	    top: -20px;
+	    left: auto;
+	    position: absolute;
+	    z-index: 20;
 	}
+	.slick-next{
+		@extend  .sprite;
+		@extend .icon-arrow-c-right; 
+	    right: 0;
+	    top: -20px;
+	    position: absolute;
+	    z-index: 20;
+	}  
+} 
+
+
+.product-slider.hiddenBlock {
+	@extend .container;
 }
