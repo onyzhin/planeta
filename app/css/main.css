@@ -5871,6 +5871,8 @@ a {
   a:hover, a:focus {
     color: #333333;
     text-decoration: none; }
+  a:active, a:focus {
+    text-decoration: none; }
 
 .mainheading, .ctext h1, h1 {
   font-size: 30px;
@@ -6823,10 +6825,14 @@ a {
     border-radius: 4px;
     text-align: center;
     margin: 0 15px; }
-  .companies .slick-prev:before {
-    content: none; }
-  .companies .slick-next:before {
-    content: none; }
+  .companies .slick-prev {
+    left: 0px; }
+    .companies .slick-prev:before {
+      content: none; }
+  .companies .slick-next {
+    right: 0px; }
+    .companies .slick-next:before {
+      content: none; }
 
 .catalog-header {
   border-radius: 8px;

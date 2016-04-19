@@ -10,7 +10,14 @@ a{
 	@extend %link;
 	border:0;
 
+<<<<<<< HEAD
 	&:hover, &:focus{color:$baseColorHover;text-decoration: none;}
+=======
+	&:hover{color:$baseColorHover;text-decoration: none;}
+	&:active, &:focus{
+		text-decoration: none;
+	}
+>>>>>>> cdfb06369d390cfb5c56f12aa5c396bd8426122c
 }
 
 .mainheading,.ctext h1,h1{
