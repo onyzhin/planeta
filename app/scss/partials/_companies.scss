@@ -4,7 +4,19 @@
 	margin-bottom: 30px;
 	&-slider{
 		padding-right: pxtopercent(70);
-		padding-left: pxtopercent(70);		
+		padding-left: pxtopercent(70);
+		@media (max-width: 480px){	 
+			height: auto;
+			max-height: 100px;
+			white-space: nowrap;
+			padding: 0 0;
+			.slide{
+				width: 150px;
+				margin-right: 20px;
+				margin-bottom: 25px;
+				@extend %inline-middle;
+			}
+		}	
 	}
 	.slick-slide{
 		outline: none;

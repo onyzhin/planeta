@@ -14,13 +14,11 @@
 
 // Container that the modal scrolls within
 .modal {
-  display: none;
+  
   overflow: hidden;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: -99999px;
+  left: -99999px;
   z-index: $zindex-modal;
   -webkit-overflow-scrolling: touch;
 
@@ -33,7 +31,13 @@
     @include translate3d(0, -25%, 0);
     @include transition-transform(0.3s ease-out);
   }
-  &.in .modal-dialog { @include translate3d(0, 0, 0) }
+  &.in{
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    .modal-dialog { @include translate3d(0, 0, 0) }
+  }
 }
 .modal-open .modal {
   overflow-x: hidden;

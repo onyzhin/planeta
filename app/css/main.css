@@ -2,7 +2,7 @@
 /* base */
 /* buttons */
 /* Colors */
-.icon, .main-slider .slick-prev, .main-slider .slick-next, .companies .slick-prev, .companies .slick-next, .sprite, .select2-container--default .select2-selection--single .select2-selection__arrow, .navigator > ul > li > a:after, .product-slider .slick-prev, .product-slider .slick-next, .rating span, .icon-socials, .button, .form input[type="submit"], .location-select .select2-container--default .select2-selection__rendered, .header-phone a, .header-detail span, .header-authorization a, .footer-smenu a, .product-item-image a, .product-item-rate .rating, .product-item-rate a, .product-item-compare span, .companies img, .catalog-list.list-type .product-item-rate, .pagination-custom li, .pagination-custom li > a, .pagination-custom li > span {
+.icon, .main-slider .slick-prev, .main-slider .slick-next, .companies .slick-prev, .companies .slick-next, .sprite, .select2-container--default .select2-selection--single .select2-selection__arrow, .header-menu .hidden-menu-toggle.active i, .navigator > ul > li > a:after, .product-slider .slick-prev, .product-slider .slick-next, .rating span, .icon-socials, .button, .form input[type="submit"], .location-select .select2-container--default .select2-selection__rendered, .header-phone a, .header-detail span, .header-authorization a, .footer-smenu a, .product-item-image a, .product-item-rate .rating, .product-item-rate a, .product-item-compare span, .companies-slider .slide, .companies img, .catalog-list.list-type .product-item-rate, .pagination-custom li, .pagination-custom li > a, .pagination-custom li > span {
   display: inline-block;
   vertical-align: middle; }
 
@@ -32,11 +32,11 @@ a {
   overflow: hidden;
   display: block; }
 
-.icon, .main-slider .slick-prev, .main-slider .slick-next, .companies .slick-prev, .companies .slick-next, .sprite, .select2-container--default .select2-selection--single .select2-selection__arrow, .navigator > ul > li > a:after, .product-slider .slick-prev, .product-slider .slick-next, .rating span, .icon-socials, .button, .form input[type="submit"], .location-select .select2-container--default .select2-selection__rendered, .header-phone a, .header-detail span, .header-authorization a, .footer-smenu a, .product-item-image a, .product-item-rate .rating, .product-item-rate a, .product-item-compare span, .companies img, .catalog-list.list-type .product-item-rate, .pagination-custom li, .pagination-custom li > a, .pagination-custom li > span {
+.icon, .main-slider .slick-prev, .main-slider .slick-next, .companies .slick-prev, .companies .slick-next, .sprite, .select2-container--default .select2-selection--single .select2-selection__arrow, .header-menu .hidden-menu-toggle.active i, .navigator > ul > li > a:after, .product-slider .slick-prev, .product-slider .slick-next, .rating span, .icon-socials, .button, .form input[type="submit"], .location-select .select2-container--default .select2-selection__rendered, .header-phone a, .header-detail span, .header-authorization a, .footer-smenu a, .product-item-image a, .product-item-rate .rating, .product-item-rate a, .product-item-compare span, .companies-slider .slide, .companies img, .catalog-list.list-type .product-item-rate, .pagination-custom li, .pagination-custom li > a, .pagination-custom li > span {
   display: inline-block;
   vertical-align: middle; }
 
-.navigator > ul > li > ul:after, .spinner .btn i, .catalog-view i {
+.main-slider .slider-arrows, .navigator > ul > li > ul:after, .spinner .btn i, .catalog-view i {
   position: absolute;
   top: 0;
   left: 0;
@@ -4680,13 +4680,10 @@ button.close {
   overflow: hidden; }
 
 .modal {
-  display: none;
   overflow: hidden;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: -99999px;
+  left: -99999px;
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0; }
@@ -4697,9 +4694,14 @@ button.close {
     -moz-transition: -moz-transform 0.3s ease-out;
     -o-transition: -o-transform 0.3s ease-out;
     transition: transform 0.3s ease-out; }
-  .modal.in .modal-dialog {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+  .modal.in {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .modal.in .modal-dialog {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
 
 .modal-open .modal {
   overflow-x: hidden;
@@ -5412,6 +5414,9 @@ body * {
   text-align: left;
   vertical-align: middle; }
 
+.no-wrap {
+  white-space: nowrap; }
+
 /* fonts */
 /* Functional styling;
  * These styles are required for noUiSlider to function.
@@ -5613,124 +5618,124 @@ img {
   border: 0;
   max-width: 100%; }
 
-.sprite, .select2-container--default .select2-selection--single .select2-selection__arrow, .navigator > ul > li > a:after, .product-slider .slick-prev, .product-slider .slick-next {
+.sprite, .select2-container--default .select2-selection--single .select2-selection__arrow, .header-menu .hidden-menu-toggle.active i, .navigator > ul > li > a:after, .product-slider .slick-prev, .product-slider .slick-next {
   background-image: url(../img/main-sprite.png);
   background-repeat: no-repeat; }
-  .sprite.icon-arrow-c-left, .select2-container--default .select2-selection--single .icon-arrow-c-left.select2-selection__arrow, .select2-container--default .select2-selection--single .product-slider .select2-selection__arrow.slick-prev, .product-slider .select2-container--default .select2-selection--single .select2-selection__arrow.slick-prev, .navigator > ul > li > a.icon-arrow-c-left:after, .product-slider .navigator > ul > li > a.slick-prev:after, .product-slider .slick-prev, .product-slider .icon-arrow-c-left.slick-next {
+  .sprite.icon-arrow-c-left, .select2-container--default .select2-selection--single .icon-arrow-c-left.select2-selection__arrow, .select2-container--default .select2-selection--single .product-slider .select2-selection__arrow.slick-prev, .product-slider .select2-container--default .select2-selection--single .select2-selection__arrow.slick-prev, .header-menu .hidden-menu-toggle.active i.icon-arrow-c-left, .header-menu .hidden-menu-toggle.active .product-slider i.slick-prev, .product-slider .header-menu .hidden-menu-toggle.active i.slick-prev, .navigator > ul > li > a.icon-arrow-c-left:after, .product-slider .navigator > ul > li > a.slick-prev:after, .product-slider .slick-prev, .product-slider .icon-arrow-c-left.slick-next {
     background-position: -1px -1px;
     width: 30px;
     height: 29px; }
-  .sprite.icon-arrow-c-right, .select2-container--default .select2-selection--single .icon-arrow-c-right.select2-selection__arrow, .select2-container--default .select2-selection--single .product-slider .select2-selection__arrow.slick-next, .product-slider .select2-container--default .select2-selection--single .select2-selection__arrow.slick-next, .navigator > ul > li > a.icon-arrow-c-right:after, .product-slider .navigator > ul > li > a.slick-next:after, .product-slider .icon-arrow-c-right.slick-prev, .product-slider .slick-next {
+  .sprite.icon-arrow-c-right, .select2-container--default .select2-selection--single .icon-arrow-c-right.select2-selection__arrow, .select2-container--default .select2-selection--single .product-slider .select2-selection__arrow.slick-next, .product-slider .select2-container--default .select2-selection--single .select2-selection__arrow.slick-next, .header-menu .hidden-menu-toggle.active i.icon-arrow-c-right, .header-menu .hidden-menu-toggle.active .product-slider i.slick-next, .product-slider .header-menu .hidden-menu-toggle.active i.slick-next, .navigator > ul > li > a.icon-arrow-c-right:after, .product-slider .navigator > ul > li > a.slick-next:after, .product-slider .icon-arrow-c-right.slick-prev, .product-slider .slick-next {
     background-position: -33px -1px;
     width: 30px;
     height: 29px; }
-  .sprite.icon-arrow-down, .select2-container--default .select2-selection--single .select2-selection__arrow, .navigator > ul > li > a.icon-arrow-down:after, .select2-container--default .select2-selection--single .navigator > ul > li > a.select2-selection__arrow:after, .product-slider .icon-arrow-down.slick-prev, .product-slider .icon-arrow-down.slick-next {
+  .sprite.icon-arrow-down, .select2-container--default .select2-selection--single .select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-arrow-down, .header-menu .hidden-menu-toggle.active .select2-container--default .select2-selection--single i.select2-selection__arrow, .select2-container--default .select2-selection--single .header-menu .hidden-menu-toggle.active i.select2-selection__arrow, .navigator > ul > li > a.icon-arrow-down:after, .select2-container--default .select2-selection--single .navigator > ul > li > a.select2-selection__arrow:after, .product-slider .icon-arrow-down.slick-prev, .product-slider .icon-arrow-down.slick-next {
     background-position: -65px -1px;
     width: 13px;
     height: 8px; }
-  .sprite.icon-arrow-down-grey, .select2-container--default .select2-selection--single .icon-arrow-down-grey.select2-selection__arrow, .spinner .btn.extremum .select2-container--default .select2-selection--single .select2-selection__arrow, .select2-container--default .select2-selection--single .spinner .btn.extremum .select2-selection__arrow, .navigator > ul > li > a.icon-arrow-down-grey:after, .spinner .btn.extremum .navigator > ul > li > a.icon-arrow-down:after, .spinner .btn.extremum .select2-container--default .select2-selection--single .navigator > ul > li > a.select2-selection__arrow:after, .select2-container--default .select2-selection--single .spinner .btn.extremum .navigator > ul > li > a.select2-selection__arrow:after, .product-slider .icon-arrow-down-grey.slick-prev, .product-slider .spinner .btn.extremum .slick-prev.icon-arrow-down, .spinner .btn.extremum .product-slider .slick-prev.icon-arrow-down, .product-slider .icon-arrow-down-grey.slick-next, .product-slider .spinner .btn.extremum .slick-next.icon-arrow-down, .spinner .btn.extremum .product-slider .slick-next.icon-arrow-down, .spinner .btn.extremum .sprite.icon-arrow-down {
+  .sprite.icon-arrow-down-grey, .select2-container--default .select2-selection--single .icon-arrow-down-grey.select2-selection__arrow, .spinner .btn.extremum .select2-container--default .select2-selection--single .select2-selection__arrow, .select2-container--default .select2-selection--single .spinner .btn.extremum .select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-arrow-down-grey, .header-menu .hidden-menu-toggle.active .spinner .btn.extremum i.icon-arrow-down, .spinner .btn.extremum .header-menu .hidden-menu-toggle.active i.icon-arrow-down, .navigator > ul > li > a.icon-arrow-down-grey:after, .spinner .btn.extremum .navigator > ul > li > a.icon-arrow-down:after, .spinner .btn.extremum .select2-container--default .select2-selection--single .navigator > ul > li > a.select2-selection__arrow:after, .select2-container--default .select2-selection--single .spinner .btn.extremum .navigator > ul > li > a.select2-selection__arrow:after, .product-slider .icon-arrow-down-grey.slick-prev, .product-slider .spinner .btn.extremum .slick-prev.icon-arrow-down, .spinner .btn.extremum .product-slider .slick-prev.icon-arrow-down, .product-slider .icon-arrow-down-grey.slick-next, .product-slider .spinner .btn.extremum .slick-next.icon-arrow-down, .spinner .btn.extremum .product-slider .slick-next.icon-arrow-down, .spinner .btn.extremum .sprite.icon-arrow-down {
     background-position: -80px -1px;
     width: 13px;
     height: 8px; }
-  .sprite.icon-arrow-up, .select2-container--default .select2-selection--single .icon-arrow-up.select2-selection__arrow, .navigator > ul > li > a.icon-arrow-up:after, .product-slider .icon-arrow-up.slick-prev, .product-slider .icon-arrow-up.slick-next {
+  .sprite.icon-arrow-up, .select2-container--default .select2-selection--single .icon-arrow-up.select2-selection__arrow, .select2-container--default .select2-selection--single .header-menu-mobile-title.active i.select2-selection__arrow, .header-menu-mobile-title.active .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-menu-mobile-title.active i.sprite, .header-menu-mobile-title.active .product-slider i.slick-prev, .product-slider .header-menu-mobile-title.active i.slick-prev, .header-menu-mobile-title.active .product-slider i.slick-next, .product-slider .header-menu-mobile-title.active i.slick-next, .header-menu .hidden-menu-toggle.active i, .navigator > ul > li > a.icon-arrow-up:after, .product-slider .icon-arrow-up.slick-prev, .product-slider .icon-arrow-up.slick-next {
     background-position: -65px -1px;
     width: 13px;
     height: 8px;
     transform: rotate(180deg); }
-  .sprite.icon-arrow-up-grey, .select2-container--default .select2-selection--single .icon-arrow-up-grey.select2-selection__arrow, .select2-container--default .select2-selection--single .spinner .btn.extremum .select2-selection__arrow.icon-arrow-up, .spinner .btn.extremum .select2-container--default .select2-selection--single .select2-selection__arrow.icon-arrow-up, .navigator > ul > li > a.icon-arrow-up-grey:after, .spinner .btn.extremum .navigator > ul > li > a.icon-arrow-up:after, .product-slider .icon-arrow-up-grey.slick-prev, .product-slider .spinner .btn.extremum .slick-prev.icon-arrow-up, .spinner .btn.extremum .product-slider .slick-prev.icon-arrow-up, .product-slider .icon-arrow-up-grey.slick-next, .product-slider .spinner .btn.extremum .slick-next.icon-arrow-up, .spinner .btn.extremum .product-slider .slick-next.icon-arrow-up, .spinner .btn.extremum .sprite.icon-arrow-up {
+  .sprite.icon-arrow-up-grey, .select2-container--default .select2-selection--single .icon-arrow-up-grey.select2-selection__arrow, .select2-container--default .select2-selection--single .spinner .btn.extremum .select2-selection__arrow.icon-arrow-up, .spinner .btn.extremum .select2-container--default .select2-selection--single .select2-selection__arrow.icon-arrow-up, .select2-container--default .select2-selection--single .spinner .btn.extremum .header-menu-mobile-title.active i.select2-selection__arrow, .spinner .btn.extremum .header-menu-mobile-title.active .select2-container--default .select2-selection--single i.select2-selection__arrow, .select2-container--default .select2-selection--single .header-menu-mobile-title.active .spinner .btn.extremum i.select2-selection__arrow, .header-menu-mobile-title.active .spinner .btn.extremum .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-arrow-up-grey, .spinner .btn.extremum .header-menu .hidden-menu-toggle.active i, .header-menu .hidden-menu-toggle.active .spinner .btn.extremum i, .navigator > ul > li > a.icon-arrow-up-grey:after, .spinner .btn.extremum .navigator > ul > li > a.icon-arrow-up:after, .product-slider .icon-arrow-up-grey.slick-prev, .product-slider .spinner .btn.extremum .slick-prev.icon-arrow-up, .spinner .btn.extremum .product-slider .slick-prev.icon-arrow-up, .product-slider .spinner .btn.extremum .header-menu-mobile-title.active i.slick-prev, .spinner .btn.extremum .header-menu-mobile-title.active .product-slider i.slick-prev, .product-slider .header-menu-mobile-title.active .spinner .btn.extremum i.slick-prev, .header-menu-mobile-title.active .spinner .btn.extremum .product-slider i.slick-prev, .product-slider .icon-arrow-up-grey.slick-next, .product-slider .spinner .btn.extremum .slick-next.icon-arrow-up, .spinner .btn.extremum .product-slider .slick-next.icon-arrow-up, .product-slider .spinner .btn.extremum .header-menu-mobile-title.active i.slick-next, .spinner .btn.extremum .header-menu-mobile-title.active .product-slider i.slick-next, .product-slider .header-menu-mobile-title.active .spinner .btn.extremum i.slick-next, .header-menu-mobile-title.active .spinner .btn.extremum .product-slider i.slick-next, .spinner .btn.extremum .sprite.icon-arrow-up, .spinner .btn.extremum .select2-container--default .select2-selection--single .header-menu-mobile-title.active i.select2-selection__arrow, .header-menu-mobile-title.active .select2-container--default .select2-selection--single .spinner .btn.extremum i.select2-selection__arrow, .spinner .btn.extremum .header-menu-mobile-title.active i.sprite, .header-menu-mobile-title.active .spinner .btn.extremum i.sprite, .header-menu-mobile-title.active .product-slider .spinner .btn.extremum i.slick-prev, .spinner .btn.extremum .product-slider .header-menu-mobile-title.active i.slick-prev, .header-menu-mobile-title.active .product-slider .spinner .btn.extremum i.slick-next, .spinner .btn.extremum .product-slider .header-menu-mobile-title.active i.slick-next {
     background-position: -80px -1px;
     width: 13px;
     height: 8px;
     transform: rotate(180deg); }
-  .sprite.icon-arrow-small, .select2-container--default .select2-selection--single .icon-arrow-small.select2-selection__arrow, .select2-container--default .select2-selection--single .navigator > ul > li > a.select2-selection__arrow:after, .navigator > ul > li > a:after, .product-slider .icon-arrow-small.slick-prev, .product-slider .navigator > ul > li > a.slick-prev:after, .product-slider .icon-arrow-small.slick-next, .product-slider .navigator > ul > li > a.slick-next:after {
+  .sprite.icon-arrow-small, .select2-container--default .select2-selection--single .icon-arrow-small.select2-selection__arrow, .select2-container--default .select2-selection--single .navigator > ul > li > a.select2-selection__arrow:after, .header-menu .hidden-menu-toggle.active i.icon-arrow-small, .navigator > ul > li > a:after, .product-slider .icon-arrow-small.slick-prev, .product-slider .navigator > ul > li > a.slick-prev:after, .product-slider .icon-arrow-small.slick-next, .product-slider .navigator > ul > li > a.slick-next:after {
     background-position: -111px -80px;
     width: 5px;
     height: 8px; }
-  .sprite.icon-basket-active, .select2-container--default .select2-selection--single .icon-basket-active.select2-selection__arrow, .navigator > ul > li > a.icon-basket-active:after, .product-slider .icon-basket-active.slick-prev, .product-slider .icon-basket-active.slick-next {
+  .sprite.icon-basket-active, .select2-container--default .select2-selection--single .icon-basket-active.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-basket-active, .navigator > ul > li > a.icon-basket-active:after, .product-slider .icon-basket-active.slick-prev, .product-slider .icon-basket-active.slick-next {
     background-position: -65px -11px;
     width: 22px;
     height: 20px; }
-  .sprite.icon-basket-disable, .select2-container--default .select2-selection--single .icon-basket-disable.select2-selection__arrow, .select2-container--default .select2-selection--single .header-detail.basket.disable i.select2-selection__arrow, .header-detail.basket.disable .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-detail.basket.disable i.sprite, .header-detail.basket.disable .product-slider i.slick-prev, .product-slider .header-detail.basket.disable i.slick-prev, .header-detail.basket.disable .product-slider i.slick-next, .product-slider .header-detail.basket.disable i.slick-next, .navigator > ul > li > a.icon-basket-disable:after, .product-slider .icon-basket-disable.slick-prev, .product-slider .icon-basket-disable.slick-next {
+  .sprite.icon-basket-disable, .select2-container--default .select2-selection--single .icon-basket-disable.select2-selection__arrow, .select2-container--default .select2-selection--single .header-detail.basket.disable i.select2-selection__arrow, .header-detail.basket.disable .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-detail.basket.disable i.sprite, .header-detail.basket.disable .header-menu .hidden-menu-toggle.active i, .header-menu .hidden-menu-toggle.active .header-detail.basket.disable i, .header-detail.basket.disable .product-slider i.slick-prev, .product-slider .header-detail.basket.disable i.slick-prev, .header-detail.basket.disable .product-slider i.slick-next, .product-slider .header-detail.basket.disable i.slick-next, .header-menu .hidden-menu-toggle.active i.icon-basket-disable, .navigator > ul > li > a.icon-basket-disable:after, .product-slider .icon-basket-disable.slick-prev, .product-slider .icon-basket-disable.slick-next {
     background-position: -89px -76px;
     width: 22px;
     height: 20px; }
-  .sprite.icon-burger, .select2-container--default .select2-selection--single .icon-burger.select2-selection__arrow, .navigator > ul > li > a.icon-burger:after, .product-slider .icon-burger.slick-prev, .product-slider .icon-burger.slick-next {
+  .sprite.icon-burger, .select2-container--default .select2-selection--single .icon-burger.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-burger, .navigator > ul > li > a.icon-burger:after, .product-slider .icon-burger.slick-prev, .product-slider .icon-burger.slick-next {
     background-position: -1px -33px;
     width: 15px;
     height: 12px; }
-  .sprite.icon-check, .select2-container--default .select2-selection--single .icon-check.select2-selection__arrow, .navigator > ul > li > a.icon-check:after, .product-slider .icon-check.slick-prev, .product-slider .icon-check.slick-next {
+  .sprite.icon-check, .select2-container--default .select2-selection--single .icon-check.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-check, .navigator > ul > li > a.icon-check:after, .product-slider .icon-check.slick-prev, .product-slider .icon-check.slick-next {
     background-position: -18px -33px;
     width: 21px;
     height: 22px; }
-  .sprite.icon-check-active, .select2-container--default .select2-selection--single .icon-check-active.select2-selection__arrow, .navigator > ul > li > a.icon-check-active:after, .product-slider .icon-check-active.slick-prev, .product-slider .icon-check-active.slick-next {
+  .sprite.icon-check-active, .select2-container--default .select2-selection--single .icon-check-active.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-check-active, .navigator > ul > li > a.icon-check-active:after, .product-slider .icon-check-active.slick-prev, .product-slider .icon-check-active.slick-next {
     background-position: -41px -33px;
     width: 21px;
     height: 22px; }
-  .sprite.icon-compare, .select2-container--default .select2-selection--single .icon-compare.select2-selection__arrow, .select2-container--default .select2-selection--single .header-detail.compare.disable i.select2-selection__arrow, .header-detail.compare.disable .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-detail.compare.disable i.sprite, .header-detail.compare.disable .product-slider i.slick-prev, .product-slider .header-detail.compare.disable i.slick-prev, .header-detail.compare.disable .product-slider i.slick-next, .product-slider .header-detail.compare.disable i.slick-next, .navigator > ul > li > a.icon-compare:after, .product-slider .icon-compare.slick-prev, .product-slider .icon-compare.slick-next {
+  .sprite.icon-compare, .select2-container--default .select2-selection--single .icon-compare.select2-selection__arrow, .select2-container--default .select2-selection--single .header-detail.compare.disable i.select2-selection__arrow, .header-detail.compare.disable .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-detail.compare.disable i.sprite, .header-detail.compare.disable .header-menu .hidden-menu-toggle.active i, .header-menu .hidden-menu-toggle.active .header-detail.compare.disable i, .header-detail.compare.disable .product-slider i.slick-prev, .product-slider .header-detail.compare.disable i.slick-prev, .header-detail.compare.disable .product-slider i.slick-next, .product-slider .header-detail.compare.disable i.slick-next, .header-menu .hidden-menu-toggle.active i.icon-compare, .navigator > ul > li > a.icon-compare:after, .product-slider .icon-compare.slick-prev, .product-slider .icon-compare.slick-next {
     background-position: -64px -33px;
     width: 19px;
     height: 19px; }
-  .sprite.icon-compare-active, .select2-container--default .select2-selection--single .icon-compare-active.select2-selection__arrow, .navigator > ul > li > a.icon-compare-active:after, .product-slider .icon-compare-active.slick-prev, .product-slider .icon-compare-active.slick-next {
+  .sprite.icon-compare-active, .select2-container--default .select2-selection--single .icon-compare-active.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-compare-active, .navigator > ul > li > a.icon-compare-active:after, .product-slider .icon-compare-active.slick-prev, .product-slider .icon-compare-active.slick-next {
     background-position: -64px -54px;
     width: 19px;
     height: 19px; }
-  .sprite.icon-heart-active-big, .select2-container--default .select2-selection--single .icon-heart-active-big.select2-selection__arrow, .navigator > ul > li > a.icon-heart-active-big:after, .product-slider .icon-heart-active-big.slick-prev, .product-slider .icon-heart-active-big.slick-next {
+  .sprite.icon-heart-active-big, .select2-container--default .select2-selection--single .icon-heart-active-big.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-heart-active-big, .navigator > ul > li > a.icon-heart-active-big:after, .product-slider .icon-heart-active-big.slick-prev, .product-slider .icon-heart-active-big.slick-next {
     background-position: -1px -75px;
     width: 22px;
     height: 19px; }
-  .sprite.icon-heart-disable-big, .select2-container--default .select2-selection--single .icon-heart-disable-big.select2-selection__arrow, .select2-container--default .select2-selection--single .header-detail.postpone.disable i.select2-selection__arrow, .header-detail.postpone.disable .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-detail.postpone.disable i.sprite, .header-detail.postpone.disable .product-slider i.slick-prev, .product-slider .header-detail.postpone.disable i.slick-prev, .header-detail.postpone.disable .product-slider i.slick-next, .product-slider .header-detail.postpone.disable i.slick-next, .navigator > ul > li > a.icon-heart-disable-big:after, .product-slider .icon-heart-disable-big.slick-prev, .product-slider .icon-heart-disable-big.slick-next {
+  .sprite.icon-heart-disable-big, .select2-container--default .select2-selection--single .icon-heart-disable-big.select2-selection__arrow, .select2-container--default .select2-selection--single .header-detail.postpone.disable i.select2-selection__arrow, .header-detail.postpone.disable .select2-container--default .select2-selection--single i.select2-selection__arrow, .header-detail.postpone.disable i.sprite, .header-detail.postpone.disable .header-menu .hidden-menu-toggle.active i, .header-menu .hidden-menu-toggle.active .header-detail.postpone.disable i, .header-detail.postpone.disable .product-slider i.slick-prev, .product-slider .header-detail.postpone.disable i.slick-prev, .header-detail.postpone.disable .product-slider i.slick-next, .product-slider .header-detail.postpone.disable i.slick-next, .header-menu .hidden-menu-toggle.active i.icon-heart-disable-big, .navigator > ul > li > a.icon-heart-disable-big:after, .product-slider .icon-heart-disable-big.slick-prev, .product-slider .icon-heart-disable-big.slick-next {
     background-position: -46px -75px;
     width: 22px;
     height: 19px; }
-  .sprite.icon-heart-active-middle, .select2-container--default .select2-selection--single .icon-heart-active-middle.select2-selection__arrow, .navigator > ul > li > a.icon-heart-active-middle:after, .product-slider .icon-heart-active-middle.slick-prev, .product-slider .icon-heart-active-middle.slick-next {
+  .sprite.icon-heart-active-middle, .select2-container--default .select2-selection--single .icon-heart-active-middle.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-heart-active-middle, .navigator > ul > li > a.icon-heart-active-middle:after, .product-slider .icon-heart-active-middle.slick-prev, .product-slider .icon-heart-active-middle.slick-next {
     background-position: -25px -75px;
     width: 19px;
     height: 16px; }
-  .sprite.icon-heart-active-small, .select2-container--default .select2-selection--single .icon-heart-active-small.select2-selection__arrow, .navigator > ul > li > a.icon-heart-active-small:after, .product-slider .icon-heart-active-small.slick-prev, .product-slider .icon-heart-active-small.slick-next {
+  .sprite.icon-heart-active-small, .select2-container--default .select2-selection--single .icon-heart-active-small.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-heart-active-small, .navigator > ul > li > a.icon-heart-active-small:after, .product-slider .icon-heart-active-small.slick-prev, .product-slider .icon-heart-active-small.slick-next {
     background-position: -85px -33px;
     width: 13px;
     height: 11px; }
-  .sprite.icon-heart-disable-small, .select2-container--default .select2-selection--single .icon-heart-disable-small.select2-selection__arrow, .navigator > ul > li > a.icon-heart-disable-small:after, .product-slider .icon-heart-disable-small.slick-prev, .product-slider .icon-heart-disable-small.slick-next {
+  .sprite.icon-heart-disable-small, .select2-container--default .select2-selection--single .icon-heart-disable-small.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-heart-disable-small, .navigator > ul > li > a.icon-heart-disable-small:after, .product-slider .icon-heart-disable-small.slick-prev, .product-slider .icon-heart-disable-small.slick-next {
     background-position: -85px -46px;
     width: 13px;
     height: 11px; }
-  .sprite.icon-key, .select2-container--default .select2-selection--single .icon-key.select2-selection__arrow, .navigator > ul > li > a.icon-key:after, .product-slider .icon-key.slick-prev, .product-slider .icon-key.slick-next {
+  .sprite.icon-key, .select2-container--default .select2-selection--single .icon-key.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-key, .navigator > ul > li > a.icon-key:after, .product-slider .icon-key.slick-prev, .product-slider .icon-key.slick-next {
     background-position: -1px -54px;
     width: 15px;
     height: 15px; }
-  .sprite.icon-map, .select2-container--default .select2-selection--single .icon-map.select2-selection__arrow, .navigator > ul > li > a.icon-map:after, .product-slider .icon-map.slick-prev, .product-slider .icon-map.slick-next {
+  .sprite.icon-map, .select2-container--default .select2-selection--single .icon-map.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-map, .navigator > ul > li > a.icon-map:after, .product-slider .icon-map.slick-prev, .product-slider .icon-map.slick-next {
     background-position: -85px -59px;
     width: 13px;
     height: 15px; }
-  .sprite.icon-remove-active, .select2-container--default .select2-selection--single .icon-remove-active.select2-selection__arrow, .navigator > ul > li > a.icon-remove-active:after, .product-slider .icon-remove-active.slick-prev, .product-slider .icon-remove-active.slick-next {
+  .sprite.icon-remove-active, .select2-container--default .select2-selection--single .icon-remove-active.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-remove-active, .navigator > ul > li > a.icon-remove-active:after, .product-slider .icon-remove-active.slick-prev, .product-slider .icon-remove-active.slick-next {
     background-position: -18px -59px;
     width: 11px;
     height: 12px; }
-  .sprite.icon-remove-disable, .select2-container--default .select2-selection--single .icon-remove-disable.select2-selection__arrow, .navigator > ul > li > a.icon-remove-disable:after, .product-slider .icon-remove-disable.slick-prev, .product-slider .icon-remove-disable.slick-next {
+  .sprite.icon-remove-disable, .select2-container--default .select2-selection--single .icon-remove-disable.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-remove-disable, .navigator > ul > li > a.icon-remove-disable:after, .product-slider .icon-remove-disable.slick-prev, .product-slider .icon-remove-disable.slick-next {
     background-position: -31px -59px;
     width: 11px;
     height: 12px; }
-  .sprite.icon-search, .select2-container--default .select2-selection--single .icon-search.select2-selection__arrow, .navigator > ul > li > a.icon-search:after, .product-slider .icon-search.slick-prev, .product-slider .icon-search.slick-next {
+  .sprite.icon-search, .select2-container--default .select2-selection--single .icon-search.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-search, .navigator > ul > li > a.icon-search:after, .product-slider .icon-search.slick-prev, .product-slider .icon-search.slick-next {
     background-position: -70px -76px;
     width: 15px;
     height: 15px; }
-  .sprite.icon-uislider-pick, .select2-container--default .select2-selection--single .icon-uislider-pick.select2-selection__arrow, .navigator > ul > li > a.icon-uislider-pick:after, .product-slider .icon-uislider-pick.slick-prev, .product-slider .icon-uislider-pick.slick-next {
+  .sprite.icon-uislider-pick, .select2-container--default .select2-selection--single .icon-uislider-pick.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-uislider-pick, .navigator > ul > li > a.icon-uislider-pick:after, .product-slider .icon-uislider-pick.slick-prev, .product-slider .icon-uislider-pick.slick-next {
     background-position: -95px -1px;
     width: 20px;
     height: 20px; }
-  .sprite.icon-view-1, .select2-container--default .select2-selection--single .icon-view-1.select2-selection__arrow, .navigator > ul > li > a.icon-view-1:after, .product-slider .icon-view-1.slick-prev, .product-slider .icon-view-1.slick-next {
+  .sprite.icon-view-1, .select2-container--default .select2-selection--single .icon-view-1.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-view-1, .navigator > ul > li > a.icon-view-1:after, .product-slider .icon-view-1.slick-prev, .product-slider .icon-view-1.slick-next {
     background-position: -100px -23px;
     width: 15px;
     height: 15px; }
-  .sprite.icon-view-1-active, .select2-container--default .select2-selection--single .icon-view-1-active.select2-selection__arrow, .select2-container--default .select2-selection--single .catalog-view.active .select2-selection__arrow.icon-view-1, .catalog-view.active .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-1, .select2-container--default .select2-selection--single .catalog-view:hover .select2-selection__arrow.icon-view-1, .catalog-view:hover .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-1, .navigator > ul > li > a.icon-view-1-active:after, .catalog-view.active .navigator > ul > li > a.icon-view-1:after, .catalog-view:hover .navigator > ul > li > a.icon-view-1:after, .product-slider .icon-view-1-active.slick-prev, .product-slider .catalog-view.active .slick-prev.icon-view-1, .catalog-view.active .product-slider .slick-prev.icon-view-1, .product-slider .catalog-view:hover .slick-prev.icon-view-1, .catalog-view:hover .product-slider .slick-prev.icon-view-1, .product-slider .icon-view-1-active.slick-next, .product-slider .catalog-view.active .slick-next.icon-view-1, .catalog-view.active .product-slider .slick-next.icon-view-1, .product-slider .catalog-view:hover .slick-next.icon-view-1, .catalog-view:hover .product-slider .slick-next.icon-view-1, .catalog-view.active .sprite.icon-view-1, .catalog-view:hover .sprite.icon-view-1 {
+  .sprite.icon-view-1-active, .select2-container--default .select2-selection--single .icon-view-1-active.select2-selection__arrow, .select2-container--default .select2-selection--single .catalog-view.active .select2-selection__arrow.icon-view-1, .catalog-view.active .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-1, .select2-container--default .select2-selection--single .catalog-view:hover .select2-selection__arrow.icon-view-1, .catalog-view:hover .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-1, .header-menu .hidden-menu-toggle.active i.icon-view-1-active, .header-menu .hidden-menu-toggle.active .catalog-view.active i.icon-view-1, .catalog-view.active .header-menu .hidden-menu-toggle.active i.icon-view-1, .header-menu .hidden-menu-toggle.active .catalog-view:hover i.icon-view-1, .catalog-view:hover .header-menu .hidden-menu-toggle.active i.icon-view-1, .navigator > ul > li > a.icon-view-1-active:after, .catalog-view.active .navigator > ul > li > a.icon-view-1:after, .catalog-view:hover .navigator > ul > li > a.icon-view-1:after, .product-slider .icon-view-1-active.slick-prev, .product-slider .catalog-view.active .slick-prev.icon-view-1, .catalog-view.active .product-slider .slick-prev.icon-view-1, .product-slider .catalog-view:hover .slick-prev.icon-view-1, .catalog-view:hover .product-slider .slick-prev.icon-view-1, .product-slider .icon-view-1-active.slick-next, .product-slider .catalog-view.active .slick-next.icon-view-1, .catalog-view.active .product-slider .slick-next.icon-view-1, .product-slider .catalog-view:hover .slick-next.icon-view-1, .catalog-view:hover .product-slider .slick-next.icon-view-1, .catalog-view.active .sprite.icon-view-1, .catalog-view:hover .sprite.icon-view-1 {
     background-position: -100px -40px;
     width: 15px;
     height: 15px; }
-  .sprite.icon-view-2, .select2-container--default .select2-selection--single .icon-view-2.select2-selection__arrow, .navigator > ul > li > a.icon-view-2:after, .product-slider .icon-view-2.slick-prev, .product-slider .icon-view-2.slick-next {
+  .sprite.icon-view-2, .select2-container--default .select2-selection--single .icon-view-2.select2-selection__arrow, .header-menu .hidden-menu-toggle.active i.icon-view-2, .navigator > ul > li > a.icon-view-2:after, .product-slider .icon-view-2.slick-prev, .product-slider .icon-view-2.slick-next {
     background-position: -44px -57px;
     width: 15px;
     height: 15px; }
-  .sprite.icon-view-2-active, .select2-container--default .select2-selection--single .icon-view-2-active.select2-selection__arrow, .select2-container--default .select2-selection--single .catalog-view.active .select2-selection__arrow.icon-view-2, .catalog-view.active .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-2, .select2-container--default .select2-selection--single .catalog-view:hover .select2-selection__arrow.icon-view-2, .catalog-view:hover .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-2, .navigator > ul > li > a.icon-view-2-active:after, .catalog-view.active .navigator > ul > li > a.icon-view-2:after, .catalog-view:hover .navigator > ul > li > a.icon-view-2:after, .product-slider .icon-view-2-active.slick-prev, .product-slider .catalog-view.active .slick-prev.icon-view-2, .catalog-view.active .product-slider .slick-prev.icon-view-2, .product-slider .catalog-view:hover .slick-prev.icon-view-2, .catalog-view:hover .product-slider .slick-prev.icon-view-2, .product-slider .icon-view-2-active.slick-next, .product-slider .catalog-view.active .slick-next.icon-view-2, .catalog-view.active .product-slider .slick-next.icon-view-2, .product-slider .catalog-view:hover .slick-next.icon-view-2, .catalog-view:hover .product-slider .slick-next.icon-view-2, .catalog-view.active .sprite.icon-view-2, .catalog-view:hover .sprite.icon-view-2 {
+  .sprite.icon-view-2-active, .select2-container--default .select2-selection--single .icon-view-2-active.select2-selection__arrow, .select2-container--default .select2-selection--single .catalog-view.active .select2-selection__arrow.icon-view-2, .catalog-view.active .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-2, .select2-container--default .select2-selection--single .catalog-view:hover .select2-selection__arrow.icon-view-2, .catalog-view:hover .select2-container--default .select2-selection--single .select2-selection__arrow.icon-view-2, .header-menu .hidden-menu-toggle.active i.icon-view-2-active, .header-menu .hidden-menu-toggle.active .catalog-view.active i.icon-view-2, .catalog-view.active .header-menu .hidden-menu-toggle.active i.icon-view-2, .header-menu .hidden-menu-toggle.active .catalog-view:hover i.icon-view-2, .catalog-view:hover .header-menu .hidden-menu-toggle.active i.icon-view-2, .navigator > ul > li > a.icon-view-2-active:after, .catalog-view.active .navigator > ul > li > a.icon-view-2:after, .catalog-view:hover .navigator > ul > li > a.icon-view-2:after, .product-slider .icon-view-2-active.slick-prev, .product-slider .catalog-view.active .slick-prev.icon-view-2, .catalog-view.active .product-slider .slick-prev.icon-view-2, .product-slider .catalog-view:hover .slick-prev.icon-view-2, .catalog-view:hover .product-slider .slick-prev.icon-view-2, .product-slider .icon-view-2-active.slick-next, .product-slider .catalog-view.active .slick-next.icon-view-2, .catalog-view.active .product-slider .slick-next.icon-view-2, .product-slider .catalog-view:hover .slick-next.icon-view-2, .catalog-view:hover .product-slider .slick-next.icon-view-2, .catalog-view.active .sprite.icon-view-2, .catalog-view:hover .sprite.icon-view-2 {
     background-position: -100px -57px;
     width: 15px;
     height: 15px; }
@@ -5869,10 +5874,10 @@ img {
 a {
   border: 0; }
   a:hover, a:focus {
-    color: #333333;
-    text-decoration: none; }
-  a:active, a:focus {
-    text-decoration: none; }
+    color: #333333; }
+  a:active, a:focus, a:hover {
+    text-decoration: none;
+    outline: none; }
 
 .mainheading, .ctext h1, h1 {
   font-size: 30px;
@@ -6201,15 +6206,16 @@ a {
   float: right;
   border-left: 1px solid #404040;
   padding: 0 10px;
-  line-height: 61px; }
+  line-height: 61px;
+  text-align: center; }
   @media (max-width: 750px) {
     .header-detail {
       line-height: 41px;
-      text-align: center;
-      padding: 0 0; } }
+      text-align: center; } }
   .header-detail-inner, .header-detail a {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
   .header-detail:first-child {
     border-right: 1px solid #404040; }
   .header-detail.disable .header-detail-inner, .header-detail.disable a {
@@ -6276,6 +6282,49 @@ a {
   position: relative;
   z-index: 2;
   margin-bottom: 10px; }
+  .header-menu-mobile {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    z-index: 2;
+    display: none; }
+    @media (max-width: 750px) {
+      .header-menu-mobile {
+        display: block; } }
+    .header-menu-mobile-title {
+      background: #fff;
+      float: right;
+      padding: 13px 8px;
+      position: relative;
+      cursor: pointer; }
+      .header-menu-mobile-title i {
+        margin-left: 5px; }
+      .header-menu-mobile-title.active {
+        box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 6px; }
+      .header-menu-mobile-title:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        background: #fff; }
+    .header-menu-mobile ul {
+      background: #fff;
+      box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      border-top-right-radius: 0;
+      clear: both;
+      padding: 15px 8px;
+      max-width: 150px;
+      float: right; }
+      .header-menu-mobile ul li {
+        margin-bottom: 15px; }
+        .header-menu-mobile ul li:last-child {
+          margin-bottom: 0; }
+        .header-menu-mobile ul li a {
+          color: #333333; }
   .header-menu .navbar {
     margin-bottom: 0; }
   .header-menu ul {
@@ -6301,12 +6350,19 @@ a {
   .header-menu.hidden-menu {
     position: absolute;
     top: 100%;
+    margin-top: -7px;
     background: #fff;
-    width: 100%; }
+    width: calc(100% + 2px); }
     .header-menu.hidden-menu ul li {
       text-align: left !important; }
+      @media (max-width: 970px) {
+        .header-menu.hidden-menu ul li {
+          display: block !important; } }
       .header-menu.hidden-menu ul li a {
         padding: 0px 10px; }
+        @media (max-width: 970px) {
+          .header-menu.hidden-menu ul li a {
+            padding-left: 0 !important; } }
 
 .footer-main {
   background: #333333;
@@ -6361,12 +6417,26 @@ a {
   padding: 20px 20px; }
 
 .main-slider {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  @media (max-width: 750px) {
+    .main-slider {
+      margin-bottom: 25px; } }
   .main-slider .slider-img {
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; }
+  .main-slider .slider-arrows {
+    height: 100%;
+    z-index: 5; }
+    @media (max-width: 750px) {
+      .main-slider .slider-arrows {
+        z-index: -1; } }
+  .main-slider img {
+    margin: 0 auto;
+    display: block;
+    min-height: 160px; }
   .main-slider .slider-text {
     position: absolute;
     top: 0;
@@ -6374,17 +6444,38 @@ a {
     left: 0;
     right: 0;
     padding-left: 14%;
-    padding-top: 6.6%; }
+    padding-top: 6.6%;
+    z-index: 7; }
+    @media (max-width: 970px) {
+      .main-slider .slider-text {
+        padding-top: 5%; } }
+    @media (max-width: 750px) {
+      .main-slider .slider-text {
+        padding-left: 15px; } }
     .main-slider .slider-text h4 {
       color: #767676;
       font-size: 30px;
       margin-bottom: 0; }
+      @media (max-width: 970px) {
+        .main-slider .slider-text h4 {
+          font-size: 20px; } }
+      @media (max-width: 750px) {
+        .main-slider .slider-text h4 {
+          font-size: 14px;
+          margin-bottom: 0px; } }
     .main-slider .slider-text h2 {
       color: #333333;
       font-size: 64px;
       font-weight: bold;
       margin-top: 0;
       margin-bottom: 29px; }
+      @media (max-width: 970px) {
+        .main-slider .slider-text h2 {
+          font-size: 48px; } }
+      @media (max-width: 750px) {
+        .main-slider .slider-text h2 {
+          font-size: 30px;
+          margin-bottom: 11px; } }
     .main-slider .slider-text .container, .main-slider .slider-text .product-slider.hiddenBlock {
       height: 100%; }
     .main-slider .slider-text .button, .main-slider .slider-text .form input[type="submit"], .form .main-slider .slider-text input[type="submit"] {
@@ -6393,22 +6484,54 @@ a {
       font-size: 24px;
       width: auto;
       max-width: 220px; }
+      @media (max-width: 970px) {
+        .main-slider .slider-text .button, .main-slider .slider-text .form input[type="submit"], .form .main-slider .slider-text input[type="submit"] {
+          font-size: 20px;
+          padding: 0 4px; } }
+      @media (max-width: 750px) {
+        .main-slider .slider-text .button, .main-slider .slider-text .form input[type="submit"], .form .main-slider .slider-text input[type="submit"] {
+          font-size: 18px;
+          height: 31px;
+          line-height: 29px; } }
       .main-slider .slider-text .button em, .main-slider .slider-text .form input[type="submit"] em, .form .main-slider .slider-text input[type="submit"] em {
         font-size: 34px; }
+        @media (max-width: 970px) {
+          .main-slider .slider-text .button em, .main-slider .slider-text .form input[type="submit"] em, .form .main-slider .slider-text input[type="submit"] em {
+            font-size: 28px; } }
+        @media (max-width: 750px) {
+          .main-slider .slider-text .button em, .main-slider .slider-text .form input[type="submit"] em, .form .main-slider .slider-text input[type="submit"] em {
+            font-size: 24px; } }
   .main-slider .slick-slide {
     outline: none; }
   .main-slider .slick-prev {
-    position: absolute; }
+    position: absolute;
+    left: 0; }
     .main-slider .slick-prev:before, .main-slider .slick-prev:after {
       content: ''; }
   .main-slider .slick-next {
-    position: absolute; }
+    position: absolute;
+    right: 0; }
     .main-slider .slick-next:before, .main-slider .slick-next:after {
       content: ''; }
+  .main-slider .slick-dots {
+    text-align: left;
+    margin-left: 13px;
+    bottom: 0;
+    z-index: 5; }
+  .main-slider .slick-dots li {
+    margin: 0; }
+  .main-slider .slick-dots li button:before {
+    color: #6d6d6d;
+    font-size: 12px;
+    opacity: 1; }
+  .main-slider .slick-dots li.slick-active button:before {
+    color: #e84a7f;
+    font-size: 12px;
+    opacity: 1; }
 
 .navigator {
   position: relative;
-  z-index: 3; }
+  z-index: 6; }
   .navigator:hover > ul {
     display: block; }
   .navigator-toggle {
@@ -6449,7 +6572,8 @@ a {
         width: 307px;
         transform: translateX(-307px);
         transition: 300ms all ease;
-        display: block; } }
+        display: block;
+        background: #404040; } }
     .navigator > ul:after {
       content: '';
       background: #fff;
@@ -6464,7 +6588,7 @@ a {
       width: 100%; }
       @media (max-width: 750px) {
         .navigator > ul:after {
-          background: #404040; } }
+          content: none; } }
     @media (max-width: 750px) {
       .navigator > ul > li:hover, .navigator > ul > li.active {
         background: #333333;
@@ -6539,7 +6663,11 @@ a {
       column-count: 3; }
       @media (max-width: 1200px) {
         .navigator > ul > li > ul {
-          width: 562.5px; } }
+          width: 727.5px;
+          color: cyan; } }
+      @media (max-width: 970px) {
+        .navigator > ul > li > ul {
+          width: 500.25px; } }
       @media (max-width: 750px) {
         .navigator > ul > li > ul {
           width: 100%;
@@ -6604,6 +6732,9 @@ a {
     position: relative;
     z-index: 5;
     width: 50%; }
+    @media (max-width: 750px) {
+      .product-collections-header {
+        width: 100%; } }
     .product-collections-header h3 {
       float: left;
       margin-right: 5%; }
@@ -6616,6 +6747,9 @@ a {
           color: #333333;
           border-color: transparent;
           text-decoration: none; }
+      @media (max-width: 750px) {
+        .product-collections-header h3 {
+          margin: 0px 10% 15px 0; } }
 
 .product-item {
   border: 1px solid #e3e3e3;
@@ -6662,6 +6796,16 @@ a {
       cursor: default; }
     .product-item-postpone:not(.disable):active {
       background: #e1004a; }
+    .product-item-postpone span {
+      position: absolute;
+      left: 100%;
+      margin-left: 6px;
+      border-bottom: 1px dotted #333333;
+      line-height: 14px;
+      top: 3px;
+      opacity: 0; }
+    .product-item-postpone:hover span {
+      opacity: 1; }
   .product-item-image {
     text-align: center;
     height: 193px;
@@ -6670,7 +6814,8 @@ a {
     margin-top: 0;
     line-height: 19px;
     margin-bottom: 2px;
-    height: 39px; }
+    height: 39px;
+    overflow: hidden; }
   .product-item-rate {
     margin-bottom: 8px; }
     .product-item-rate .rating {
@@ -6817,6 +6962,16 @@ a {
   .companies-slider {
     padding-right: 7.52688%;
     padding-left: 7.52688%; }
+    @media (max-width: 480px) {
+      .companies-slider {
+        height: auto;
+        max-height: 100px;
+        white-space: nowrap;
+        padding: 0 0; }
+        .companies-slider .slide {
+          width: 150px;
+          margin-right: 20px;
+          margin-bottom: 25px; } }
   .companies .slick-slide {
     outline: none; }
   .companies-item {
@@ -6844,6 +6999,9 @@ a {
     float: left; }
     .catalog-header .select-field .select2-container--default {
       min-width: 190px; }
+      @media (max-width: 970px) {
+        .catalog-header .select-field .select2-container--default {
+          min-width: 100px; } }
 
 .catalog-list {
   margin-bottom: 30px; }
@@ -6890,6 +7048,19 @@ a {
     padding-top: 11px; }
     .catalog-list.list-type .product-item-last .button, .catalog-list.list-type .product-item-last .form input[type="submit"], .form .catalog-list.list-type .product-item-last input[type="submit"] {
       margin-bottom: 9px; }
+    @media (min-width: 750px) and (max-width: 970px) {
+      .catalog-list.list-type .product-item-last {
+        width: 100%; }
+        .catalog-list.list-type .product-item-last .product-item-price {
+          float: left; }
+        .catalog-list.list-type .product-item-last .button, .catalog-list.list-type .product-item-last .form input[type="submit"], .form .catalog-list.list-type .product-item-last input[type="submit"] {
+          float: right; }
+        .catalog-list.list-type .product-item-last .product-item-compare {
+          float: left; }
+          .catalog-list.list-type .product-item-last .product-item-compare:last-child {
+            float: right; }
+        .catalog-list.list-type .product-item-last .product-item-compares {
+          clear: both; } }
 
 nav.pagination-nav {
   text-align: center;
@@ -6928,6 +7099,96 @@ nav.pagination-nav {
       .pagination-custom li:last-child > a:hover,
       .pagination-custom li:last-child > span:hover {
         text-decoration: none; }
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative; }
+
+.jspPane {
+  position: absolute; }
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+  background: red; }
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: transparent;
+  margin: 0 0 2px; }
+
+.jspCap {
+  display: none; }
+
+.jspHorizontalBar .jspCap {
+  float: left; }
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px; }
+
+.jspDrag {
+  background-color: #ff0054;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0054), to(#e1004a));
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#ff0054', end-colourStr='#e1004a');
+  border-radius: 8px;
+  position: relative;
+  top: -5px;
+  left: 0;
+  cursor: pointer;
+  height: 11px !important; }
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%; }
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0; }
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d; }
+
+.jspVerticalBar .jspArrow {
+  height: 16px; }
+
+.jspHorizontalBar .jspArrow {
+  width: 16px;
+  float: left;
+  height: 100%; }
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none; }
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%; }
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0; }
 
 /*===========================================================
  Styles for developers
@@ -7317,8 +7578,14 @@ nav.pagination-nav {
   .filter_trigger.active:before {
     transform: rotate(180deg); }
 
+.active .filter_content {
+  display: block !important; }
+
+.active .filter_trigger:before {
+  transform: rotate(180deg); }
+
 .filter_content .nouislider input {
-  width: 83px;
+  width: calc(50% - 4.5px);
   height: 29px;
   background-color: #fff;
   border: none;
@@ -7327,7 +7594,8 @@ nav.pagination-nav {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   padding: 0 10px;
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2); }
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  float: left; }
   .filter_content .nouislider input:first-child {
     margin: 0 9px 0 0; }
 
@@ -7685,6 +7953,10 @@ nav.pagination-nav {
   display: none; }
 
 @media (min-width: 768px) {
+  .modal_dialog_product {
+    width: 760px; } }
+
+@media (min-width: 980px) {
   .modal-dialog {
     width: 400px;
     margin: 30px auto; }

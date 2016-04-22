@@ -10,10 +10,12 @@ a{
 	@extend %link;
 	border:0;
 
-	&:hover, &:focus{color:$baseColorHover;text-decoration: none;}
-	&:active, &:focus{
+	&:hover, &:focus{color:$baseColorHover;}
+	&:active, &:focus, &:hover{
 		text-decoration: none;
+		outline: none;
 	}
+}
 
 .mainheading,.ctext h1,h1{
 	@extend %heading;

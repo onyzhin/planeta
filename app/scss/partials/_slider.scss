@@ -1,10 +1,28 @@
 .main-slider{
 	overflow: hidden;
+	position: relative;
+	@media (max-width: $container-sm){
+		margin-bottom: 25px;
+	}
 	.slider-img{
 		height: 400px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center top;
+	}
+	.slider-arrows{
+		height: 100%;
+		@extend %full;
+		z-index: 5;
+		
+		@media (max-width: $container-sm){
+			z-index: -1;
+		} 
+	}
+	img{
+		margin: 0 auto;
+		display: block;
+		min-height: 160px;
 	}
 	.slider-text{
 		position: absolute;
@@ -13,18 +31,42 @@
 		left: 0;
 		right: 0;
         padding-left: 14%;
-   		 padding-top: 6.6%;
+   		padding-top: 6.6%;
+   		z-index: 7;
+
+		@media (max-width: $container-md){
+			padding-top: 5%;
+		}
+		@media (max-width: $container-sm){
+			padding-left: 15px;
+		} 
 		h4{
 			color: $ctextLigthColor;
 		    font-size: 30px;
 		    margin-bottom: 0; 
+
+			@media (max-width: $container-md){
+				font-size: 20px;
+			}
+			@media (max-width: $container-sm){
+				font-size: 14px;
+				margin-bottom: 0px;
+			}
 		}
 		h2{
 			color: $baseColor;
 		    font-size: 64px;
    			font-weight: bold;
    			margin-top: 0;
-		    margin-bottom: 29px;
+		    margin-bottom: 29px; 
+
+			@media (max-width: $container-md){
+				font-size: 48px;
+			}
+			@media (max-width: $container-sm){
+				font-size: 30px;
+				margin-bottom: 11px;
+			}
 		}
 		.container{
 			height: 100%;
@@ -35,8 +77,25 @@
 			font-size: 24px;
 			width: auto;
 			max-width: 220px;
+
+			@media (max-width: $container-md){
+				font-size: 20px;
+				padding: 0 4px;
+			}
+			@media (max-width: $container-sm){
+				font-size: 18px;
+				height: 31px;
+				line-height: 29px;
+			}
 			em{
 				font-size: 34px;
+
+				@media (max-width: $container-md){
+					font-size: 28px;
+				}
+				@media (max-width: $container-sm){
+					font-size: 24px;
+				}
 			}
 		}
 	}
@@ -47,6 +106,7 @@
 		@extend .icon; 
 		@extend .arrows-dis-left ;  
 	    position: absolute;
+	    left: 0;
 	    &:hover{
 	    	@extend .arrows-act-left;
 	    }
@@ -58,6 +118,7 @@
 		@extend .icon; 
 		@extend .arrows-dis-right ;  
 	    position: absolute;
+	    right: 0;
 	    &:hover{
 	    	@extend .arrows-act-right;
 	    }
@@ -65,4 +126,23 @@
 	    	content: '';
 	    }
 	}  
+	.slick-dots{
+		text-align:left;
+		margin-left: 13px;
+		bottom: 0;
+		z-index: 5;
+	}
+	.slick-dots li {
+		margin: 0;
+	}
+	.slick-dots li button:before{
+		color:#6d6d6d;
+		font-size: 12px;
+		opacity: 1;
+	}
+	.slick-dots li.slick-active button:before{
+		color:#e84a7f;
+		font-size: 12px;
+		opacity: 1;
+	}
 }

@@ -30,6 +30,10 @@
 			position: relative;
 			z-index: 5;
 			width: 50%;
+
+			@media (max-width: $container-sm){
+				width: 100%;
+			}
 			h3{
 				float: left;
 				margin-right: 5%;
@@ -45,6 +49,9 @@
 						border-color:transparent;
 						text-decoration: none;
 					}
+				}
+				@media (max-width: $container-sm){
+					margin: 0px 10% 15px 0; 
 				}
 			}
 		}
@@ -98,6 +105,20 @@
 			&:not(.disable):active{
 				background: $buttonDarkColor;
 			}
+			span{
+				position: absolute;
+				left: 100%;
+				margin-left: 6px;
+				border-bottom: 1px dotted $baseColor;
+				line-height: 14px;
+    			top: 3px;
+    			opacity: 0;
+			} 
+			&:hover{
+				span{
+					opacity: 1; 
+				}
+			}
 		}
 		&-image{
 			text-align: center;
@@ -112,6 +133,7 @@
 			line-height: 19px;
 			margin-bottom: 2px;
 			height: 39px;
+			overflow: hidden;
 		}
 		&-rate{
 			margin-bottom: 8px;

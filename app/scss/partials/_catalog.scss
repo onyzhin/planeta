@@ -11,7 +11,11 @@ $border-radius: 8px;
 			float: left;
 			.select2-container--default {
 				//width: 100% !important; 
-				min-width: 190px
+				min-width: 190px ;
+
+				@media (max-width: $container-md){
+					min-width: 100px;
+				}
 			}
 		}
 	}
@@ -92,6 +96,25 @@ $border-radius: 8px;
 						margin-bottom: 9px;
 
 					} 
+
+					@media (min-width: $container-sm) and (max-width: $container-md){
+						width: 100%;
+						.product-item-price{
+							float: left;
+						}
+						.button{
+							float: right;
+						}
+						.product-item-compare{
+							float: left;
+							&:last-child{
+								float: right;
+							}
+						}
+						.product-item-compares{
+							clear: both;
+						}
+					}
 				}
 			}
 		}

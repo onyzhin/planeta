@@ -1,7 +1,7 @@
 $nav-max-w: 100%;
 .navigator{
 	position: relative;
-	z-index: 3;
+	z-index: 6;
 
 	&:hover{
 		&>ul{
@@ -58,6 +58,7 @@ $nav-max-w: 100%;
 			transform: translateX(-307px);
 			transition: 300ms all ease;
 			display: block;
+		    background: #404040;
 		}
 		&:after{
 			content: '';
@@ -74,7 +75,8 @@ $nav-max-w: 100%;
 		    //width: calc(25% - 21px);
 			//max-width: $nav-max-w;
 			@media (max-width: $container-sm){
-				background: $headlightColor; 
+				//background: $headlightColor; 
+				content: none;
 			}
 		}
 		&>li{
@@ -169,7 +171,11 @@ $nav-max-w: 100%;
 				text-align: left;
 				column-count: 3;				
 				@media (max-width: $container-lg){
-					width: ($container-sm * 0.75);
+					width: ($container-md * 0.75);
+					color: cyan;
+				}			
+				@media (max-width: $container-md){
+					width: ($container-sm * 0.667);
 				}
 				@media (max-width: $container-sm){
 					width: 100%;

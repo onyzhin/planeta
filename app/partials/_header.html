@@ -7,7 +7,7 @@
          					<p>8 (812) <b>123-45-67</b></p>
          					<a href="#" data-toggle="modal" data-target="#myModal2">Заказать обратный звонок</a>
          				</div>
-         			</div>
+         			</div> 
               <div class="col-xs-3 visible-xs text-center xs-clear"> 
                   <div class="navbar-toggle">
                       <span class="icon-container">
@@ -19,8 +19,8 @@
                   </div>
                   <span class="vfix"></span>
               </div>
-         			<div class="col-lg-9 col-sm-8 col-xs-9 xs-clear"> 
-                  <div class="header-detail basket col-xs-4">
+         			<div class="col-lg-9 col-sm-8 col-xs-9 xs-clear no-wrap"> 
+                  <div class="header-detail basket">
                     <a href="#" class="header-detail-inner">
                       <i class="sprite icon-basket-active"></i> 
                       <span class="header-detail-title">Корзина</span> 
@@ -28,7 +28,7 @@
                       <span class="header-detail-title">39 790 руб.</span>
                     </a> 
                   </div>  
-                  <div class="header-detail postpone col-xs-4">
+                  <div class="header-detail postpone">
                     <a href="#" class="header-detail-inner">
                       <i class="sprite icon-heart-active-big"></i> 
                       <span class="header-detail-title">Отложено</span> 
@@ -36,7 +36,7 @@
                       <span class="header-detail-title">9 890 руб.</span> 
                     </a>
                   </div>
-                  <div class="header-detail compare disable col-xs-4">
+                  <div class="header-detail compare disable">
                     <div class="header-detail-inner">
                       <i class="sprite icon-compare-active"></i> 
                       <span class="header-detail-title">Сравнение</span> 
@@ -50,12 +50,25 @@
         <div class="header-main">
           <div class="container">
           	<div class="row">
-          		<div class="col-sm-3">
+          		<div class="col-sm-4 col-md-3"> 
           			<a href="/" class="header-logo"><img src="img/logo.png" alt=""></a>
+                <div class="header-menu-mobile">
+                  <div class="header-menu-mobile-title expand-tool">Меню <i class="sprite icon-arrow-down"></i></div> 
+                  <div class="expand-subject">
+                    <ul>
+                        <li><a href="#">Адреса магазинов</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Гарантии и возврат</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul> 
+                  </div>
+                </div>
                 <a href="#" class="menu-toggle"></a>
                 @@include('_navigator.html')
           		</div> 
-          		<div class="col-sm-9"> 
+          		<div class="col-sm-8 col-md-9"> 
                     <div class="header-setting  hidden-xs">                     
                       <div class="pull-left">
                         <div class="location-select">
@@ -74,7 +87,7 @@
                       @@include('_header-menu.html')
                     </div>
                     <div class="header-search form">
-                      <form action="">
+                      <form action="?">
                         <div class="header-search-field"><i class="sprite icon-search"></i><input type="text" placeholder="Поиск по сайту"><input type="submit" value="Искать" class="button"></div>
                       </form>                    
                     </div>
