@@ -25,11 +25,23 @@
 			color: $ctextLigthColor; 
 			margin-bottom: 1px;
 		}
+		&-col{
+			@media (max-width: $container-sm){
+				width: 100%;
+			}			
+		}
+		@media (max-width: $container-sm){
+			text-align: center;
+		}
 	}
 	&-smenu{
 		&-inner{
 			border-bottom: 1px solid #e3e3e3;
 			padding: 24px 0 26px 0;
+
+			@media (max-width: $container-sm){
+				text-align: center;
+			}
 		}
 		a{
 			text-decoration: underline;
@@ -44,5 +56,9 @@
 	.socials{
 		font-size: 0;
 		text-align: right;
+		@media (max-width: $container-sm){
+			text-align: center;
+			margin-bottom: 18px;
+		}
 	}
 }

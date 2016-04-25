@@ -72,13 +72,18 @@
 				i{
 					@extend .icon-heart-disable-big;
 				}
-			}			
+			}
 		}
 		&.basket{
 			&.disable{
 				i{
 					@extend .icon-basket-disable;
 				}
+			}
+		}
+		&-title{
+			@media (max-width: $container-md){
+				display: none !important;
 			}
 		}
 	}
@@ -152,6 +157,9 @@
 					line-height: 26px; 
 					padding: 10px 26px;
 				}
+				i{
+
+				}
 				&.active,
 				& a:hover{ 
 					text-decoration: underline;
@@ -163,6 +171,20 @@
 					text-align: right;
 				}
 			}
+		}
+		&.hidden-menu{
+			position: absolute;
+		    top: 100%;
+		    background: #fff;
+		    width: 100%;
+		    ul{
+		    	li{
+		    		text-align: left !important;
+		    		a{
+		    			padding: 0px 10px;
+	    			}
+		    	}
+		    }
 		}
 	}
 }
